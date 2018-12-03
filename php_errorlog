@@ -1,0 +1,993 @@
+[22-Aug-2018 09:23:47 CST6CDT] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/wefewfwe/public_html/tradingJournal/index.php on line 20
+[22-Aug-2018 09:33:14 CST6CDT] PHP Parse error:  syntax error, unexpected '/', expecting end of file in /home/wefewfwe/public_html/tradingJournal/index.php on line 4
+[22-Aug-2018 10:03:50 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/wefewfwe/public_html/tradingJournal/login_verification.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/login_verification.php on line 12
+[22-Aug-2018 10:05:23 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/wefewfwe/public_html/tradingJournal/login_verification.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/login_verification.php on line 12
+[22-Aug-2018 10:13:15 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/wefewfwe/public_html/tradingJournal/login_verification.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/login_verification.php on line 12
+[22-Aug-2018 10:22:12 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/wefewfwe/public_html/tradingJournal/login_verification.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/login_verification.php on line 12
+[22-Aug-2018 10:22:17 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/wefewfwe/public_html/tradingJournal/login_verification.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/login_verification.php on line 12
+[22-Aug-2018 10:27:46 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/wefewfwe/public_html/tradingJournal/login_verification.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/login_verification.php on line 12
+[22-Aug-2018 10:28:30 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/wefewfwe/public_html/tradingJournal/login_verification.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/login_verification.php on line 12
+[22-Aug-2018 10:51:47 CST6CDT] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in /home/wefewfwe/public_html/tradingJournal/login_page.php on line 5
+[22-Aug-2018 11:36:28 CST6CDT] PHP Parse error:  syntax error, unexpected ')' in /home/wefewfwe/public_html/tradingJournal/login_verification.php on line 15
+[22-Aug-2018 11:36:43 CST6CDT] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 47
+[22-Aug-2018 11:37:27 CST6CDT] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Dbconfig has a deprecated constructor in /home/wefewfwe/public_html/tradingJournal/config/Dbconfig.php on line 2
+[22-Aug-2018 11:37:27 CST6CDT] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function MysqlConn::VerifyLogin(), 0 passed in /home/wefewfwe/public_html/tradingJournal/login_verification.php on line 12 and exactly 2 expected in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:27
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/login_verification.php(12): MysqlConn->VerifyLogin()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 27
+[22-Aug-2018 11:39:21 CST6CDT] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function MysqlConn::VerifyLogin(), 0 passed in /home/wefewfwe/public_html/tradingJournal/login_verification.php on line 12 and exactly 2 expected in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:27
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/login_verification.php(12): MysqlConn->VerifyLogin()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 27
+[22-Aug-2018 11:39:50 CST6CDT] PHP Parse error:  syntax error, unexpected ',', expecting ']' in /home/wefewfwe/public_html/tradingJournal/login_verification.php on line 12
+[22-Aug-2018 11:40:09 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function dbConnect() in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:28
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/login_verification.php(12): MysqlConn->VerifyLogin('zniter81', 'yWqikr1981')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 28
+[22-Aug-2018 11:41:07 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:26
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/login_verification.php(12): MysqlConn->VerifyLogin('zniter81', 'yWqikr1981')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 26
+[22-Aug-2018 11:41:31 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:26
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/login_verification.php(12): MysqlConn->VerifyLogin('zniter81', 'yWqikr1981')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 26
+[22-Aug-2018 11:42:44 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:26
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/login_verification.php(12): MysqlConn->VerifyLogin('zniter81', 'yWqikr1981')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 26
+[22-Aug-2018 11:44:01 CST6CDT] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 21
+[22-Aug-2018 11:44:18 CST6CDT] PHP Parse error:  syntax error, unexpected '21321312' (T_LNUMBER) in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 21
+[22-Aug-2018 11:44:33 CST6CDT] PHP Parse error:  syntax error, unexpected ''123123'' (T_CONSTANT_ENCAPSED_STRING) in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 21
+[22-Aug-2018 11:45:32 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:26
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/login_verification.php(12): MysqlConn->VerifyLogin('zniter81', 'yWqikr1981')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 26
+[22-Aug-2018 11:46:26 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:27
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/login_verification.php(12): MysqlConn->VerifyLogin('zniter81', 'yWqikr1981')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 27
+[22-Aug-2018 11:47:08 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:27
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/login_verification.php(12): MysqlConn->VerifyLogin('zniter81', 'yWqikr1981')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 27
+[22-Aug-2018 11:48:49 CST6CDT] PHP Fatal error:  Class 'Dbconfig' not found in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 3
+[22-Aug-2018 11:49:03 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:14
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/login_verification.php(12): MysqlConn->VerifyLogin('zniter81', 'yWqikr1981')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 14
+[23-Aug-2018 01:22:32 CST6CDT] PHP Fatal error:  require(): Failed opening required 'Cloudinary.php' (include_path='.:/usr/local/php71/pear') in /home/wefewfwe/public_html/tradingJournal/upload.php on line 3
+[23-Aug-2018 01:32:39 CST6CDT] PHP Fatal error:  Uncaught Error: Class 'Cloudinary\Error' not found in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php:424
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php(91): Cloudinary\Uploader::call_api('upload', Array, Array, 'IMG_3941.PNG')
+#1 /home/wefewfwe/public_html/tradingJournal/upload.php(62): Cloudinary\Uploader::upload('IMG_3941.PNG')
+#2 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php on line 424
+[23-Aug-2018 01:34:27 CST6CDT] PHP Fatal error:  Uncaught Error: Class 'Cloudinary\Error' not found in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php:424
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php(91): Cloudinary\Uploader::call_api('upload', Array, Array, 'IMG_3941.PNG')
+#1 /home/wefewfwe/public_html/tradingJournal/upload.php(61): Cloudinary\Uploader::upload('IMG_3941.PNG')
+#2 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php on line 424
+[23-Aug-2018 01:38:43 CST6CDT] PHP Fatal error:  Uncaught Cloudinary\Error: Server returned unexpected status code - 0 -  in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php:424
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php(91): Cloudinary\Uploader::call_api('upload', Array, Array, 'IMG_3941.PNG')
+#1 /home/wefewfwe/public_html/tradingJournal/upload.php(62): Cloudinary\Uploader::upload('IMG_3941.PNG')
+#2 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php on line 424
+[23-Aug-2018 01:40:47 CST6CDT] PHP Fatal error:  Uncaught Cloudinary\Error: Server returned unexpected status code - 0 -  in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php:424
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php(91): Cloudinary\Uploader::call_api('upload', Array, Array, '.\\cloudinary\\IM...')
+#1 /home/wefewfwe/public_html/tradingJournal/upload.php(69): Cloudinary\Uploader::upload('.\\cloudinary\\IM...')
+#2 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php on line 424
+[23-Aug-2018 01:46:30 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function com_create_guid() in /home/wefewfwe/public_html/tradingJournal/upload.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/upload.php on line 42
+[23-Aug-2018 01:58:06 CST6CDT] PHP Parse error:  syntax error, unexpected ':' in /home/wefewfwe/public_html/tradingJournal/upload.php on line 64
+[23-Aug-2018 02:00:54 CST6CDT] PHP Parse error:  syntax error, unexpected ':' in /home/wefewfwe/public_html/tradingJournal/upload.php on line 64
+[23-Aug-2018 02:10:40 CST6CDT] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in /home/wefewfwe/public_html/tradingJournal/upload.php on line 64
+[23-Aug-2018 02:15:47 CST6CDT] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in /home/wefewfwe/public_html/tradingJournal/upload.php on line 67
+[23-Aug-2018 02:16:27 CST6CDT] PHP Fatal error:  Uncaught Cloudinary\Error: Upload preset not found in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php:437
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php(91): Cloudinary\Uploader::call_api('upload', Array, Array, 'cloudinary/temp...')
+#1 /home/wefewfwe/public_html/tradingJournal/upload.php(67): Cloudinary\Uploader::upload('cloudinary/temp...', Array)
+#2 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php on line 437
+[23-Aug-2018 02:27:18 CST6CDT] PHP Fatal error:  Uncaught Cloudinary\Error: Upload preset not found in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php:437
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php(91): Cloudinary\Uploader::call_api('upload', Array, Array, 'cloudinary/temp...')
+#1 /home/wefewfwe/public_html/tradingJournal/upload.php(67): Cloudinary\Uploader::upload('cloudinary/temp...', Array)
+#2 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php on line 437
+[23-Aug-2018 22:54:35 CST6CDT] PHP Fatal error:  Uncaught Cloudinary\Error: Invalid cloud_name tradingjournal33 in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php:437
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php(91): Cloudinary\Uploader::call_api('upload', Array, Array, 'cloudinary/temp...')
+#1 /home/wefewfwe/public_html/tradingJournal/upload.php(65): Cloudinary\Uploader::upload('cloudinary/temp...', Array)
+#2 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php on line 437
+[23-Aug-2018 23:09:04 CST6CDT] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/wefewfwe/public_html/tradingJournal/upload.php on line 73
+[23-Aug-2018 23:10:07 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function api_sign_request() in /home/wefewfwe/public_html/tradingJournal/upload.php:72
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/upload.php on line 72
+[23-Aug-2018 23:34:12 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined method MysqlConn::Verify_SignUp() in /home/wefewfwe/public_html/tradingJournal/signup_verification.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/signup_verification.php on line 12
+[25-Aug-2018 03:25:48 CST6CDT] PHP Parse error:  syntax error, unexpected '{' in /home/wefewfwe/public_html/tradingJournal/addStrategy.php on line 9
+[25-Aug-2018 03:47:01 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:30
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/addStrategy.php(12): MysqlConn->AddStrategy('OPGacasc')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 30
+[25-Aug-2018 03:58:20 CST6CDT] PHP Parse error:  syntax error, unexpected 'StrategyName' (T_STRING), expecting ']' in /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php on line 12
+[25-Aug-2018 03:58:49 CST6CDT] PHP Parse error:  syntax error, unexpected 'StrategyName' (T_STRING), expecting ']' in /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php on line 12
+[25-Aug-2018 04:00:43 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:27
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', '3')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 27
+[25-Aug-2018 04:06:41 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:27
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 27
+[25-Aug-2018 04:07:03 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:27
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 27
+[25-Aug-2018 04:07:29 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:27
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 27
+[25-Aug-2018 04:07:36 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:27
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 27
+[25-Aug-2018 04:09:21 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:27
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 27
+[25-Aug-2018 04:11:34 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:27
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 27
+[25-Aug-2018 04:12:46 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:27
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 27
+[25-Aug-2018 04:15:24 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:27
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 27
+[25-Aug-2018 04:16:32 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:27
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 27
+[25-Aug-2018 04:17:08 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function execute() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:28
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 28
+[25-Aug-2018 04:19:46 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function execute() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:28
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 28
+[25-Aug-2018 04:20:12 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function execute() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:28
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 28
+[25-Aug-2018 04:25:01 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:28
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 28
+[25-Aug-2018 04:29:40 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:27
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 27
+[25-Aug-2018 04:30:46 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:27
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 27
+[25-Aug-2018 04:32:25 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:28
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 28
+[25-Aug-2018 04:37:51 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:28
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 28
+[25-Aug-2018 04:40:15 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:28
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 28
+[25-Aug-2018 04:40:54 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:31
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 31
+[25-Aug-2018 04:42:04 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:32
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 32
+[25-Aug-2018 04:42:44 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:32
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 32
+[25-Aug-2018 04:43:58 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:32
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 32
+[25-Aug-2018 04:45:58 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:27
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 27
+[25-Aug-2018 04:47:48 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:27
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 27
+[25-Aug-2018 04:48:42 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function execute() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:28
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 28
+[25-Aug-2018 04:51:36 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function execute() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:28
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 28
+[25-Aug-2018 04:52:05 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function execute() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:29
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 29
+[25-Aug-2018 04:52:31 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function execute() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:29
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 29
+[25-Aug-2018 04:52:52 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function execute() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:29
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 29
+[25-Aug-2018 04:56:52 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function __construct() in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:25
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 25
+[25-Aug-2018 04:59:48 CST6CDT] PHP Parse error:  syntax error, unexpected 'catch' (T_CATCH) in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 31
+[25-Aug-2018 05:03:27 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:28
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 28
+[25-Aug-2018 05:03:49 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:28
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 28
+[25-Aug-2018 05:04:21 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:33
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 33
+[25-Aug-2018 05:04:53 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:33
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/modifyStrategy.php(12): MysqlConn->ModifyStrategy('TlD111', 3)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 33
+[25-Aug-2018 10:32:09 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::fetch_array() in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:17
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/main_strategy.php(14): MysqlConn->GetAllStrategy()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 17
+[25-Aug-2018 10:49:24 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:15
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/main_strategy.php(14): MysqlConn->GetAllStrategy()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 15
+[25-Aug-2018 10:53:37 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:17
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/main_strategy.php(14): MysqlConn->GetAllStrategy()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 17
+[25-Aug-2018 10:53:39 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:17
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/main_strategy.php(14): MysqlConn->GetAllStrategy()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 17
+[25-Aug-2018 10:53:40 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:17
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/main_strategy.php(14): MysqlConn->GetAllStrategy()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 17
+[25-Aug-2018 10:53:40 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:17
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/main_strategy.php(14): MysqlConn->GetAllStrategy()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 17
+[25-Aug-2018 10:53:40 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:17
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/main_strategy.php(14): MysqlConn->GetAllStrategy()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 17
+[25-Aug-2018 11:11:58 CST6CDT] PHP Parse error:  syntax error, unexpected '$arr' (T_VARIABLE) in /home/wefewfwe/public_html/tradingJournal/main_strategy.php on line 18
+[25-Aug-2018 11:12:50 CST6CDT] PHP Fatal error:  Cannot declare class Strategy, because the name is already in use in /home/wefewfwe/public_html/tradingJournal/config/AllClasses.php on line 2
+[25-Aug-2018 11:18:46 CST6CDT] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/wefewfwe/public_html/tradingJournal/main_strategy.php on line 8
+[25-Aug-2018 11:18:48 CST6CDT] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/wefewfwe/public_html/tradingJournal/main_strategy.php on line 8
+[25-Aug-2018 11:26:56 CST6CDT] PHP Recoverable fatal error:  Object of class Strategy could not be converted to string in /home/wefewfwe/public_html/tradingJournal/main_strategy.php on line 17
+[25-Aug-2018 11:28:18 CST6CDT] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /home/wefewfwe/public_html/tradingJournal/main_strategy.php on line 17
+[25-Aug-2018 11:28:20 CST6CDT] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /home/wefewfwe/public_html/tradingJournal/main_strategy.php on line 17
+[25-Aug-2018 11:28:20 CST6CDT] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /home/wefewfwe/public_html/tradingJournal/main_strategy.php on line 17
+[25-Aug-2018 11:32:02 CST6CDT] PHP Parse error:  syntax error, unexpected 'https' (T_STRING), expecting ',' or ';' in /home/wefewfwe/public_html/tradingJournal/main_strategy.php on line 33
+[25-Aug-2018 11:32:17 CST6CDT] PHP Parse error:  syntax error, unexpected '/' in /home/wefewfwe/public_html/tradingJournal/main_strategy.php on line 32
+[25-Aug-2018 11:56:02 CST6CDT] PHP Parse error:  syntax error, unexpected 'red' (T_STRING), expecting ',' or ';' in /home/wefewfwe/public_html/tradingJournal/main_strategy.php on line 10
+[25-Aug-2018 11:56:06 CST6CDT] PHP Parse error:  syntax error, unexpected 'red' (T_STRING), expecting ',' or ';' in /home/wefewfwe/public_html/tradingJournal/main_strategy.php on line 10
+[25-Aug-2018 12:06:54 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:46
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php(46): MysqlConn->DeleteStrategy('T1R', 12)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 46
+[25-Aug-2018 12:07:55 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:47
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php(46): MysqlConn->DeleteStrategy('T1R', 12)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 47
+[25-Aug-2018 12:08:38 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:46
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php(46): MysqlConn->DeleteStrategy('T1R', 12)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 46
+[26-Aug-2018 09:44:38 CST6CDT] PHP Fatal error:  Cannot declare class MysqlConn, because the name is already in use in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 5
+[26-Aug-2018 09:45:38 CST6CDT] PHP Fatal error:  Cannot declare class MysqlConn, because the name is already in use in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 5
+[26-Aug-2018 09:46:24 CST6CDT] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR), expecting function (T_FUNCTION) or const (T_CONST) in /home/wefewfwe/public_html/tradingJournal/upload.php on line 10
+[26-Aug-2018 09:48:09 CST6CDT] PHP Fatal error:  Uncaught Error: Class 'UploadToCloudinary' not found in /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php on line 19
+[26-Aug-2018 09:48:21 CST6CDT] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR), expecting function (T_FUNCTION) or const (T_CONST) in /home/wefewfwe/public_html/tradingJournal/config/UploadToCloud.php on line 10
+[26-Aug-2018 09:52:27 CST6CDT] PHP Parse error:  syntax error, unexpected 'Cloudinary' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST) in /home/wefewfwe/public_html/tradingJournal/config/UploadToCloud.php on line 10
+[26-Aug-2018 09:53:53 CST6CDT] PHP Parse error:  syntax error, unexpected '$target_dir' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST) in /home/wefewfwe/public_html/tradingJournal/config/UploadToCloud.php on line 10
+[26-Aug-2018 09:54:37 CST6CDT] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/wefewfwe/public_html/tradingJournal/config/UploadToCloud.php on line 14
+[26-Aug-2018 09:55:08 CST6CDT] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/wefewfwe/public_html/tradingJournal/config/UploadToCloud.php on line 14
+[26-Aug-2018 09:56:32 CST6CDT] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/wefewfwe/public_html/tradingJournal/config/UploadToCloud.php on line 14
+[26-Aug-2018 10:02:54 CST6CDT] PHP Fatal error:  Uncaught Cloudinary\Error: cloud_name is disabled in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php:437
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php(91): Cloudinary\Uploader::call_api('upload', Array, Array, '1_5b82c11c124f9...')
+#1 /home/wefewfwe/public_html/tradingJournal/config/UploadToCloud.php(62): Cloudinary\Uploader::upload('1_5b82c11c124f9...', Array)
+#2 /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php(20): UploadToCloudinary->UploadNow('MySRFile')
+#3 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php on line 437
+[26-Aug-2018 10:11:02 CST6CDT] PHP Fatal error:  Uncaught Cloudinary\Error: cloud_name is disabled in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php:437
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php(91): Cloudinary\Uploader::call_api('upload', Array, Array, '1_5b82c301dd4ce...')
+#1 /home/wefewfwe/public_html/tradingJournal/config/UploadToCloud.php(63): Cloudinary\Uploader::upload('1_5b82c301dd4ce...', Array)
+#2 /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php(20): UploadToCloudinary->UploadNow('MySRFile')
+#3 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php on line 437
+[26-Aug-2018 10:12:55 CST6CDT] PHP Fatal error:  Uncaught Error: Class 'Uploader' not found in /home/wefewfwe/public_html/tradingJournal/config/UploadToCloud.php:62
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php(20): UploadToCloudinary->UploadNow('MySRFile')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/UploadToCloud.php on line 62
+[26-Aug-2018 10:13:37 CST6CDT] PHP Fatal error:  Uncaught Cloudinary\Error: cloud_name is disabled in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php:437
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php(91): Cloudinary\Uploader::call_api('upload', Array, Array, '1_5b82c39f9089d...')
+#1 /home/wefewfwe/public_html/tradingJournal/config/UploadToCloud.php(63): Cloudinary\Uploader::upload('1_5b82c39f9089d...', Array)
+#2 /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php(20): UploadToCloudinary->UploadNow('MySRFile')
+#3 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php on line 437
+[26-Aug-2018 10:16:49 CST6CDT] PHP Fatal error:  Uncaught Cloudinary\Error: cloud_name is disabled in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php:437
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php(91): Cloudinary\Uploader::call_api('upload', Array, Array, '1_5b82c45f6f3ee...')
+#1 /home/wefewfwe/public_html/tradingJournal/config/UploadToCloud.php(63): Cloudinary\Uploader::upload('1_5b82c45f6f3ee...', Array)
+#2 /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php(20): UploadToCloudinary->UploadNow('MySRFile')
+#3 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php on line 437
+[26-Aug-2018 10:17:51 CST6CDT] PHP Fatal error:  Uncaught Cloudinary\Error: cloud_name is disabled in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php:437
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php(91): Cloudinary\Uploader::call_api('upload', Array, Array, '1_5b82c49d91001...')
+#1 /home/wefewfwe/public_html/tradingJournal/config/UploadToCloud.php(63): Cloudinary\Uploader::upload('1_5b82c49d91001...', Array)
+#2 /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php(20): UploadToCloudinary->UploadNow('MySRFile')
+#3 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php on line 437
+[26-Aug-2018 10:32:33 CST6CDT] PHP Fatal error:  Uncaught Cloudinary\Error: cloud_name is disabled in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php:437
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php(91): Cloudinary\Uploader::call_api('upload', Array, Array, '1_5b82c80fc8115...')
+#1 /home/wefewfwe/public_html/tradingJournal/config/UploadToCloud.php(63): Cloudinary\Uploader::upload('1_5b82c80fc8115...', Array)
+#2 /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php(20): UploadToCloudinary->UploadNow('MySRFile')
+#3 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/cloudinary/Uploader.php on line 437
+[26-Aug-2018 11:04:52 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function UploadNow() on null in /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php on line 20
+[26-Aug-2018 11:11:19 CST6CDT] PHP Fatal error:  Uncaught Error: Class 'Cloudinary' not found in /home/wefewfwe/public_html/tradingJournal/config/UploadToCloud.php:16
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php(19): UploadToCloudinary->__construct()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/UploadToCloud.php on line 16
+[26-Aug-2018 11:14:02 CST6CDT] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php on line 38
+[26-Aug-2018 11:58:08 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:34
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php(65): MysqlConn->AddPreMarket('2018-08-26', '111', '222', 'some remarks', 'https://res.clo...', '1_5b82dc1a2cc78...', 'https://res.clo...', '1_5b82dc1e90269...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 34
+[26-Aug-2018 11:59:05 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:33
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php(65): MysqlConn->AddPreMarket('2018-08-26', '111', '222', 'some remarks', 'https://res.clo...', '1_5b82dc547f0f7...', 'https://res.clo...', '1_5b82dc5766b80...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 33
+[26-Aug-2018 12:00:30 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:33
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php(65): MysqlConn->AddPreMarket('2018-08-26', '111', '222', 'some remarks', 'https://res.clo...', '1_5b82dca686bdc...', 'https://res.clo...', '1_5b82dcac363ef...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 33
+[26-Aug-2018 12:01:37 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:33
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php(65): MysqlConn->AddPreMarket('2018-08-26', '111', '222', 'some remarks', 'https://res.clo...', '1_5b82dcec2329d...', 'https://res.clo...', '1_5b82dcef9b345...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 33
+[26-Aug-2018 12:03:27 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:38
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php(65): MysqlConn->AddPreMarket('2018-08-26', 111, 222, 'some remarks', 'https://res.clo...', '1_5b82dd5a415df...', 'https://res.clo...', '1_5b82dd5d057c9...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 38
+[26-Aug-2018 12:04:17 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:38
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php(65): MysqlConn->AddPreMarket('2018-08-26', 111, 222, 'some remarks', 'https://res.clo...', '1_5b82dd8c3f76c...', 'https://res.clo...', '1_5b82dd8f30ec2...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 38
+[26-Aug-2018 12:05:13 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:38
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php(65): MysqlConn->AddPreMarket('2018-08-26', 111, 222, 'some remarks', 'https://res.clo...', '1_5b82ddc3e0f05...', 'https://res.clo...', '1_5b82ddc702906...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 38
+[27-Aug-2018 10:53:33 CST6CDT] PHP Parse error:  syntax error, unexpected ''>Modify</a></td>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/wefewfwe/public_html/tradingJournal/main_premarket.php on line 51
+[27-Aug-2018 11:01:43 CST6CDT] PHP Parse error:  syntax error, unexpected '$temp_premarket' (T_VARIABLE) in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 22
+[27-Aug-2018 12:00:05 CST6CDT] PHP Parse error:  syntax error, unexpected '"', expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php on line 41
+[27-Aug-2018 12:01:25 CST6CDT] PHP Parse error:  syntax error, unexpected '"', expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php on line 40
+[27-Aug-2018 12:02:34 CST6CDT] PHP Parse error:  syntax error, unexpected '"', expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php on line 40
+[27-Aug-2018 12:04:09 CST6CDT] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE), expecting ',' or ';' in /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php on line 29
+[28-Aug-2018 10:33:50 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot use object of type PreMarket as array in /home/wefewfwe/public_html/tradingJournal/main_premarket.php:117
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/main_premarket.php on line 117
+[31-Aug-2018 03:49:25 CST6CDT] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting end of file in /home/wefewfwe/public_html/tradingJournal/main_trades.php on line 116
+[31-Aug-2018 03:58:32 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:18
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/main_trades.php(113): MysqlConn->GetAllTrades()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 18
+[31-Aug-2018 03:59:16 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:16
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/main_trades.php(113): MysqlConn->GetAllTrades()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 16
+[31-Aug-2018 03:59:32 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function execute() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:17
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/main_trades.php(113): MysqlConn->GetAllTrades()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 17
+[31-Aug-2018 03:59:35 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function execute() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:17
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/main_trades.php(113): MysqlConn->GetAllTrades()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 17
+[31-Aug-2018 03:59:36 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function execute() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:17
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/main_trades.php(113): MysqlConn->GetAllTrades()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 17
+[31-Aug-2018 04:00:01 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function execute() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:17
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/main_trades.php(113): MysqlConn->GetAllTrades()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 17
+[31-Aug-2018 12:43:40 CST6CDT] PHP Parse error:  syntax error, unexpected 'value' (T_STRING), expecting ',' or ';' in /home/wefewfwe/public_html/tradingJournal/main_trades.php on line 140
+[03-Sep-2018 09:41:54 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:34
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php(52): MysqlConn->AddTrade('HSI', '1', 'Missed', 'Buy', '2018-09-03 09:1...', '27637', '100', '100', '2018-09-03 09:5...', '27737', '', 'https://res.clo...', 'Production/1_5b...', '', NULL, NULL, Array)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 34
+[03-Sep-2018 10:48:47 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined method MysqlConn::GetSelectedTrade() in /home/wefewfwe/public_html/tradingJournal/main_trades.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/main_trades.php on line 29
+[03-Sep-2018 11:04:44 CST6CDT] PHP Parse error:  syntax error, unexpected '"}?> ?Real' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/wefewfwe/public_html/tradingJournal/main_trades.php on line 62
+[03-Sep-2018 11:13:45 CST6CDT] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/wefewfwe/public_html/tradingJournal/main_trades.php on line 100
+[03-Sep-2018 11:16:13 CST6CDT] PHP Parse error:  syntax error, unexpected ';' in /home/wefewfwe/public_html/tradingJournal/main_trades.php on line 100
+[03-Sep-2018 11:19:21 CST6CDT] PHP Parse error:  syntax error, unexpected 'checked' (T_STRING), expecting ',' or ';' in /home/wefewfwe/public_html/tradingJournal/main_trades.php on line 105
+[03-Sep-2018 11:19:22 CST6CDT] PHP Parse error:  syntax error, unexpected 'checked' (T_STRING), expecting ',' or ';' in /home/wefewfwe/public_html/tradingJournal/main_trades.php on line 105
+[03-Sep-2018 11:19:25 CST6CDT] PHP Parse error:  syntax error, unexpected 'checked' (T_STRING), expecting ',' or ';' in /home/wefewfwe/public_html/tradingJournal/main_trades.php on line 105
+[03-Sep-2018 11:39:46 CST6CDT] PHP Parse error:  syntax error, unexpected '}', expecting ';' in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 24
+[03-Sep-2018 11:40:11 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function AddTrade() in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php:23
+Stack trace:
+#0 /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php(63): MysqlConn->ModifyTrade(12, 'ffffff', '1', 'Real', 'Buy', '2018-09-11 09:0...', '111.00000', '100', '100', '2018-09-11 09:0...', '0.00000', 'sdfsdfstttttttt...', NULL, NULL, 'sdfsdfsdfdsfsdf', NULL, NULL, Array)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/tradingJournal/config/MysqlConn.php on line 23
+[03-Sep-2018 11:55:43 CST6CDT] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/wefewfwe/public_html/tradingJournal/PerformTransaction.php on line 52
+[03-Sep-2018 23:32:49 CST6CDT] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/wefewfwe/public_html/tradingJournal/login.php on line 49
+[05-Sep-2018 12:38:08 CST6CDT] PHP Parse error:  syntax error, unexpected '{' in /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php on line 457
+[05-Sep-2018 12:38:50 CST6CDT] PHP Parse error:  syntax error, unexpected '{', expecting ',' or ')' in /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php on line 457
+[05-Sep-2018 12:39:22 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function execute() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:642
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(460): MysqlConn->AddUser('ww.com', 'yWqikr1981', 'Siew Lin Lye')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 642
+[06-Sep-2018 10:47:31 CST6CDT] PHP Fatal error:  Uncaught Error: Class 'PHPMailer' not found in /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php:466
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php on line 466
+[06-Sep-2018 10:51:32 CST6CDT] PHP Fatal error:  Cannot declare class PHPMailer\PHPMailer\PHPMailer, because the name is already in use in /home/wefewfwe/public_html/ezyj.me/config/PHPMailer/PHPMailer.php on line 31
+[06-Sep-2018 10:53:28 CST6CDT] PHP Fatal error:  Uncaught Error: Class 'PHPMailer' not found in /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php:472
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php on line 472
+[06-Sep-2018 11:14:57 CST6CDT] PHP Fatal error:  Uncaught Error: Class 'SendEmail' not found in /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php:464
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php on line 464
+[06-Sep-2018 11:15:22 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function setFrom() on null in /home/wefewfwe/public_html/ezyj.me/config/SendEmail.php:35
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(465): SendEmail->SendVerifyUserEmailNow('zniter81@gmail....', 'KS')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/SendEmail.php on line 35
+[06-Sep-2018 11:16:05 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function setFrom() on null in /home/wefewfwe/public_html/ezyj.me/config/SendEmail.php:37
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(465): SendEmail->SendVerifyUserEmailNow('zniter81@gmail....', 'KS')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/SendEmail.php on line 37
+[06-Sep-2018 11:16:35 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function setFrom() on null in /home/wefewfwe/public_html/ezyj.me/config/SendEmail.php:37
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(465): SendEmail->SendVerifyUserEmailNow('zniter81@gmail....', 'KS')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/SendEmail.php on line 37
+[06-Sep-2018 11:22:30 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 5 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:642
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(461): MysqlConn->AddUser('zniwfefewfwefte...', 'yWqikr1981', 'wefewfewfwefewf')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 642
+[06-Sep-2018 11:23:15 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 5 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:643
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(461): MysqlConn->AddUser('zniwfefewfwefte...', '$2y$10$v1FQK9FA...', 'wefewfewfwefewf')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 643
+[06-Sep-2018 11:38:50 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:649
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(461): MysqlConn->AddUser('zniwfefewfwefte...', '$2y$10$zu7S5Zyj...', 'wefewfewfwefewf')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 649
+[06-Sep-2018 11:40:54 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:651
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(461): MysqlConn->AddUser('zniwfefewfwefte...', '$2y$10$KvwzTWgV...', 'wefewfewfwefewf')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 651
+[06-Sep-2018 11:41:34 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:652
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(461): MysqlConn->AddUser('zniwfefewfwefte...', '$2y$10$ywDY5Am6...', 'wefewfewfwefewf')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 652
+[06-Sep-2018 11:42:43 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:651
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(461): MysqlConn->AddUser('zniwfefewfwefte...', '$2y$10$1nq1zQDe...', 'wefewfewfwefewf')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 651
+[06-Sep-2018 11:43:53 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:651
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(461): MysqlConn->AddUser('zniwfefewfwefte...', '$2y$10$UkvKULQz...', 'wefewfewfwefewf')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 651
+[06-Sep-2018 11:44:56 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:651
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(461): MysqlConn->AddUser('zniwfefewfwefte...', '$2y$10$cCA6IHzs...', 'wefewfewfwefewf')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 651
+[06-Sep-2018 11:45:31 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:651
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(461): MysqlConn->AddUser('zniwfefewfwefte...', '$2y$10$BflAWBO6...', 'wefewfewfwefewf')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 651
+[06-Sep-2018 12:06:25 CST6CDT] PHP Parse error:  syntax error, unexpected end of file in /home/wefewfwe/public_html/ezyj.me/verify_email.php on line 12
+[06-Sep-2018 12:06:41 CST6CDT] PHP Parse error:  syntax error, unexpected end of file in /home/wefewfwe/public_html/ezyj.me/verify_email.php on line 12
+[06-Sep-2018 12:07:14 CST6CDT] PHP Parse error:  syntax error, unexpected end of file in /home/wefewfwe/public_html/ezyj.me/verify_email.php on line 13
+[06-Sep-2018 12:07:51 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:675
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('11')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 675
+[06-Sep-2018 12:08:16 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:675
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('11')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 675
+[06-Sep-2018 12:08:48 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:679
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('11')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 679
+[06-Sep-2018 12:09:08 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:679
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('11')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 679
+[07-Sep-2018 03:33:18 CST6CDT] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function MysqlConn::AddTrade(), 17 passed in /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php on line 140 and exactly 18 expected in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:87
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(140): MysqlConn->AddTrade('HSI', '14', 'Real', 'Buy', '2018-09-07 11:1...', '0.00001', '100', '100', '2018-09-07 11:2...', '0.00001', 'ewfewf', NULL, NULL, 'wefwef', NULL, NULL, NULL)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 87
+[07-Sep-2018 04:34:50 CST6CDT] PHP Parse error:  syntax error, unexpected '$EntryDateTime' (T_VARIABLE), expecting ',' or ')' in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 95
+[07-Sep-2018 04:35:36 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:95
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(140): MysqlConn->AddTrade('HSI', '1', 'Real', 'Buy', '1.004', '2018-09-20 06:1...', '0.00001', '100', '100', '2018-09-21 07:1...', '0.00001', '0.02', '', NULL, NULL, '', NULL, NULL, NULL)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 95
+[07-Sep-2018 04:36:24 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:95
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(140): MysqlConn->AddTrade('HSI', '1', 'Real', 'Buy', '1.004', '2018-09-20 06:1...', '0.00001', '100', '100', '2018-09-21 07:1...', '0.00001', '0.02', '', NULL, NULL, '', NULL, NULL, NULL)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 95
+[07-Sep-2018 19:57:08 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined method MysqlConn::ForgotPassword() in /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php:444
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php on line 444
+[07-Sep-2018 19:58:38 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined method MysqlConn::ForgotPassword() in /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php:444
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php on line 444
+[07-Sep-2018 21:23:13 CST6CDT] PHP Parse error:  syntax error, unexpected '10' (T_LNUMBER), expecting ',' or ')' in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 719
+[07-Sep-2018 21:23:41 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:721
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(444): MysqlConn->ForgotPassword('zniter81@gmail....')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 721
+[07-Sep-2018 21:30:51 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:719
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/reset_password.php(9): MysqlConn->VerifyResetPaswoordToken('5b933332a18f7_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 719
+[07-Sep-2018 21:30:56 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:719
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/reset_password.php(9): MysqlConn->VerifyResetPaswoordToken('5b933332a18f7_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 719
+[08-Sep-2018 00:44:51 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b93619523dcd_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 00:45:02 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b93619523dcd_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 00:45:11 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b93619523dcd_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 00:45:27 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b93619523dcd_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 00:45:53 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b93619523dcd_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 00:46:32 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b93619523dcd_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 00:47:35 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b93619523dcd_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 01:27:00 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b93619523dcd_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 01:28:36 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b92573360962_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 01:28:39 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b92573360962_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 01:30:23 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b92573360962_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 01:30:35 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b92573360962_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 01:32:01 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b92573360962_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 01:32:03 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b92573360962_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 01:32:03 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b92573360962_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 01:32:04 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b92573360962_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 01:32:04 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b92573360962_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 01:32:08 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b92573360962_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 01:32:09 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b92573360962_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 01:32:09 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b92573360962_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 01:32:09 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b92573360962_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 01:32:10 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b92573360962_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 01:32:10 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b92573360962_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 01:32:10 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b92573360962_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 01:32:10 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b92573360962_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 01:32:11 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b92573360962_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 01:33:11 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b936d196f7f2_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 01:35:17 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b936d196f7f2_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 01:36:10 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:696
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/verify_email.php(9): MysqlConn->VerifyUserToken('5b936d196f7f2_5...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 696
+[08-Sep-2018 02:08:45 CST6CDT] PHP Parse error:  syntax error, unexpected end of file in /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php on line 515
+[19-Sep-2018 01:13:41 CST6CDT] PHP Parse error:  syntax error, unexpected 'flat' (T_STRING), expecting ',' or ';' in /home/wefewfwe/public_html/ezyj.me/NewTrade.php on line 155
+[23-Sep-2018 09:46:30 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function alert() in /home/wefewfwe/public_html/ezyj.me/NewLessonLearn.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/NewLessonLearn.php on line 46
+[23-Sep-2018 09:46:33 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function alert() in /home/wefewfwe/public_html/ezyj.me/NewLessonLearn.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/NewLessonLearn.php on line 46
+[23-Sep-2018 09:46:38 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function alert() in /home/wefewfwe/public_html/ezyj.me/NewLessonLearn.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/NewLessonLearn.php on line 46
+[23-Sep-2018 09:47:03 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function alert() in /home/wefewfwe/public_html/ezyj.me/NewLessonLearn.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/NewLessonLearn.php on line 46
+[02-Oct-2018 11:04:11 CST6CDT] PHP Parse error:  syntax error, unexpected '{' in /home/wefewfwe/public_html/ezyj.me/login.php on line 268
+[02-Oct-2018 11:04:11 CST6CDT] PHP Parse error:  syntax error, unexpected '{' in /home/wefewfwe/public_html/ezyj.me/login.php on line 268
+[24-Oct-2018 12:21:57 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function cloudinary_js_config() in /home/wefewfwe/public_html/ezyj.me/testUpload.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/testUpload.php on line 24
+[24-Oct-2018 12:29:10 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function cloudinary_js_config() in /home/wefewfwe/public_html/ezyj.me/testUpload.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/testUpload.php on line 26
+[24-Oct-2018 12:29:46 CST6CDT] PHP Fatal error:  Uncaught Error: Class 'Cloudinary' not found in /home/wefewfwe/public_html/ezyj.me/cloudinary/Helpers.php:408
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/testUpload.php(26): cloudinary_js_config()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/cloudinary/Helpers.php on line 408
+[24-Oct-2018 12:32:33 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function cloudinary_js_config() in /home/wefewfwe/public_html/ezyj.me/testUpload.php:30
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/testUpload.php on line 30
+[24-Oct-2018 12:33:58 CST6CDT] PHP Fatal error:  Cannot redeclare cl_video_tag() (previously declared in /home/wefewfwe/public_html/ezyj.me/cloudinary/Helpers.php:498) in /home/wefewfwe/public_html/ezyj.me/cloudinary/Helpers.php on line 498
+[24-Oct-2018 13:12:52 CST6CDT] PHP Fatal error:  Uncaught Error: Class 'Cloudinary\Helpers' not found in /home/wefewfwe/public_html/ezyj.me/testUpload.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/testUpload.php on line 44
+[28-Oct-2018 10:52:57 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 6 by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:109
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(129): MysqlConn->AddTradeV2('HSI', 1, 'Real', 'Buy', 1, '2018-10-31 00:0...', 1, 1, 1, '2018-10-31 00:0...', 1, 1, '1111', NULL, NULL, Array, Array)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 109
+[28-Oct-2018 11:10:43 CST6CDT] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php on line 82
+[28-Oct-2018 11:29:32 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:225
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/main_trades.php(254): MysqlConn->GetAllTrades()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 225
+[29-Oct-2018 00:52:06 CST6CDT] PHP Parse error:  syntax error, unexpected 'ngy2p' (T_STRING), expecting ',' or ';' in /home/wefewfwe/public_html/ezyj.me/main_trades.php on line 279
+[29-Oct-2018 01:00:05 CST6CDT] PHP Parse error:  syntax error, unexpected '<' in /home/wefewfwe/public_html/ezyj.me/main_trades.php on line 298
+[29-Oct-2018 10:04:09 CST6CDT] PHP Fatal error:  Uncaught Error: Class 'Cloudinary' not found in /home/wefewfwe/public_html/ezyj.me/main_trades.php:304
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/main_trades.php on line 304
+[29-Oct-2018 10:04:21 CST6CDT] PHP Fatal error:  Uncaught Error: Class 'Cloudinary' not found in /home/wefewfwe/public_html/ezyj.me/main_trades.php:304
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/main_trades.php on line 304
+[29-Oct-2018 10:05:13 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 2 by reference in /home/wefewfwe/public_html/ezyj.me/main_trades.php:305
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/main_trades.php on line 305
+[29-Oct-2018 10:05:17 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 2 by reference in /home/wefewfwe/public_html/ezyj.me/main_trades.php:305
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/main_trades.php on line 305
+[29-Oct-2018 10:06:56 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 2 by reference in /home/wefewfwe/public_html/ezyj.me/main_trades.php:305
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/main_trades.php on line 305
+[29-Oct-2018 10:07:01 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 2 by reference in /home/wefewfwe/public_html/ezyj.me/main_trades.php:305
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/main_trades.php on line 305
+[29-Oct-2018 10:07:44 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 2 by reference in /home/wefewfwe/public_html/ezyj.me/main_trades.php:306
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/main_trades.php on line 306
+[29-Oct-2018 10:07:47 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot pass parameter 2 by reference in /home/wefewfwe/public_html/ezyj.me/main_trades.php:306
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/main_trades.php on line 306
+[29-Oct-2018 10:08:27 CST6CDT] PHP Fatal error:  Uncaught InvalidArgumentException: Must supply cloud_name in tag or in configuration in /home/wefewfwe/public_html/ezyj.me/cloudinary/Cloudinary.php:927
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/main_trades.php(305): Cloudinary::cloudinary_url('ProductionV2/1_...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/cloudinary/Cloudinary.php on line 927
+[29-Oct-2018 10:08:35 CST6CDT] PHP Fatal error:  Uncaught InvalidArgumentException: Must supply cloud_name in tag or in configuration in /home/wefewfwe/public_html/ezyj.me/cloudinary/Cloudinary.php:927
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/main_trades.php(305): Cloudinary::cloudinary_url('ProductionV2/1_...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/cloudinary/Cloudinary.php on line 927
+[29-Oct-2018 10:12:56 CST6CDT] PHP Fatal error:  Uncaught InvalidArgumentException: Must supply cloud_name in tag or in configuration in /home/wefewfwe/public_html/ezyj.me/cloudinary/Cloudinary.php:927
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/main_trades.php(305): Cloudinary::cloudinary_url('ProductionV2/1_...')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/cloudinary/Cloudinary.php on line 927
+[19-Nov-2018 09:42:42 CST6CDT] PHP Parse error:  syntax error, unexpected 'sdf111' (T_STRING), expecting ',' or ';' in /home/wefewfwe/public_html/ezyj.me/main_trades.php on line 135
+[19-Nov-2018 10:13:57 CST6CDT] PHP Parse error:  syntax error, unexpected '$stmt' (T_VARIABLE), expecting ';' or '{' in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 106
+[19-Nov-2018 10:17:07 CST6CDT] PHP Parse error:  syntax error, unexpected '$stmt' (T_VARIABLE), expecting ';' or '{' in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 106
+[19-Nov-2018 16:02:54 CST6CDT] PHP Parse error:  syntax error, unexpected end of file in /home/wefewfwe/public_html/ezyj.me/ModifyTradeV2.php on line 204
+[19-Nov-2018 16:03:33 CST6CDT] PHP Parse error:  syntax error, unexpected 'include' (T_INCLUDE) in /home/wefewfwe/public_html/ezyj.me/ModifyTradeV2.php on line 206
+[20-Nov-2018 09:46:35 CST6CDT] PHP Fatal error:  Uncaught Error: Class 'Cloudinary' not found in /home/wefewfwe/public_html/ezyj.me/ModifyTradeV2.php:199
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/ModifyTradeV2.php on line 199
+[20-Nov-2018 09:47:38 CST6CDT] PHP Fatal error:  Uncaught Error: Class 'Cloudinary' not found in /home/wefewfwe/public_html/ezyj.me/ModifyTradeV2.php:199
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/ModifyTradeV2.php on line 199
+[20-Nov-2018 11:20:08 CST6CDT] PHP Fatal error:  Cannot declare class Cloudinary, because the name is already in use in /home/wefewfwe/public_html/ezyj.me/cloudinary/Cloudinary.php on line 4
+[25-Nov-2018 09:27:48 CST6CDT] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/wefewfwe/public_html/ezyj.me/testpage.php on line 80
+[25-Nov-2018 09:30:24 CST6CDT] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/wefewfwe/public_html/ezyj.me/testpage.php on line 84
+[25-Nov-2018 09:41:06 CST6CDT] PHP Parse error:  syntax error, unexpected '|' in /home/wefewfwe/public_html/ezyj.me/testpage.php on line 94
+[25-Nov-2018 09:41:24 CST6CDT] PHP Parse error:  syntax error, unexpected end of file in /home/wefewfwe/public_html/ezyj.me/testpage.php on line 139
+[25-Nov-2018 09:41:25 CST6CDT] PHP Parse error:  syntax error, unexpected end of file in /home/wefewfwe/public_html/ezyj.me/testpage.php on line 139
+[25-Nov-2018 09:41:49 CST6CDT] PHP Fatal error:  Uncaught Error: Class 'Cloudinary' not found in /home/wefewfwe/public_html/ezyj.me/testpage.php:80
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/testpage.php on line 80
+[25-Nov-2018 09:42:23 CST6CDT] PHP Fatal error:  Cannot declare class MysqlConn, because the name is already in use in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 5
+[25-Nov-2018 09:42:34 CST6CDT] PHP Fatal error:  Uncaught InvalidArgumentException: Must supply cloud_name in tag or in configuration in /home/wefewfwe/public_html/ezyj.me/cloudinary/Cloudinary.php:927
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/testpage.php(81): Cloudinary::cloudinary_url('ProductionV2/1_...', NULL)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/cloudinary/Cloudinary.php on line 927
+[25-Nov-2018 09:44:05 CST6CDT] PHP Fatal error:  Uncaught InvalidArgumentException: Must supply cloud_name in tag or in configuration in /home/wefewfwe/public_html/ezyj.me/cloudinary/Cloudinary.php:927
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/testpage.php(82): Cloudinary::cloudinary_url('ProductionV2/1_...', NULL)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/cloudinary/Cloudinary.php on line 927
+[25-Nov-2018 09:52:43 CST6CDT] PHP Fatal error:  Uncaught Error: Class 'MysqlConn' not found in /home/wefewfwe/public_html/ezyj.me/testpage.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/testpage.php on line 21
