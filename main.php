@@ -3,7 +3,7 @@
 session_start();
 if (isset($_SESSION['UserGUID']) && $_SESSION['loggedin'] == true) {
     
-    header('Location: ViewTrades.php');
+    header('Location: Dashboard.php');
     
 } else {
     header('Location: login_page.php');

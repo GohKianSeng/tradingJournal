@@ -10,27 +10,9 @@ span.ex1 {
 include("header.php"); 
 include './cloudinary/Cloudinary.php';
 include './config/CommonFunction.php';
-	
-$sqlconn = new MysqlConn();		
-$DateStart = date('Y-m-01');
-$DateEnd = date('Y-m-t');
-
-if (isset($_GET["Date"]) && strlen($_GET["Date"]) > 0){
-	$DateStart = $_GET["Date"];
-	$dateTime = strtotime($_GET["Date"]);
-	$DateEnd = date('Y-m-t', $dateTime);
-}
-if (isset($_GET["LessonLearnID"])){
-	$result = $sqlconn->GetAllLessonLearnTrades($DateStart, $DateEnd, $_GET["LessonLearnID"]);
-}
-else if (isset($_GET["StrategyID"])){
-	$result = $sqlconn->GetAllStrategyTrades($DateStart, $DateEnd, $_GET["StrategyID"], $_GET["ProfitLoss"]);
-}
-else{
-	$result = $sqlconn->GetAllTrades();
-}
-
-
+			
+$sqlconn = new MysqlConn();
+$result = $sqlconn->GetAllPreMarket();
 for ($i = 0; $i < count($result ); $i++) {
 	$obj = $result[$i];
 ?>		
@@ -38,34 +20,16 @@ for ($i = 0; $i < count($result ); $i++) {
               <div class="col-md-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2 style="width:85%">
-					    <font size="2">
-						<table width="100%">
-							<tr>
-								<td style="text-align:left"><b><?php echo $obj->Symbol; ?> <?php echo $obj->StrategyName; ?> 
-									<?php if($obj->OrderType == "Sell")
-										{ 
-											echo "<font color='red'>" . $obj->OrderType . "</font>";
-										}
-										else
-										{
-											echo "<font color='blue'>" . $obj->OrderType . "</font>";
-										} ?></b> On: <?php echo $obj->EntryDateTime; ?></td>
-								<td style="text-align:left"></td>
-								<td style="text-align:right">P/L: <b>$<?php echo $obj->ProfitLoss; ?></b></td>
-							</tr>
-						</table>
-						</font>
-					</h2>
-					<ul class="nav navbar-right panel_toolbox">
-                      <li><a href="ModifyTradeV2.php?ActionType=ModifyV2&TradeID=<?php echo $obj->TradeID; ?>"><i class="fa fa-pencil"></i></a>
+                    <h2><?php echo $obj->MarketDate; ?></h2>
+		    <ul class="nav navbar-right panel_toolbox">
+                      <li><a href="ModifyPremarket.php?ActionType=Modify&PreMarketID=<?php echo $obj->PreMarketID; ?>"><i class="fa fa-pencil"></i></a>
                       </li>
                       <li><a></a></li><li><a></a></li>
-                      <li><a href="#" onClick="CopyURL('<?php echo $obj->TradeID; ?>');"><i class="fa fa-share-alt"></i></a>
-                      	<div style="display:block"><textarea style="width:0px;height:0px;opacity:0" name="PublicGUID<?php echo $obj->TradeID; ?>" id="PublicGUID<?php echo $obj->TradeID; ?>"><?php echo url()."/ViewPublicTrade.php?PublicGUID=".$obj->PublicGUID; ?></textarea></div>
+                      <li><a href="#" onClick="CopyURL('<?php echo $obj->PreMarketID; ?>');"><i class="fa fa-share-alt"></i></a>
+                      	<div style="display:block"><textarea style="width:0px;height:0px;opacity:0" name="PublicGUID<?php echo $obj->PreMarketID; ?>" id="PublicGUID<?php echo $obj->PreMarketID; ?>"><?php echo url()."/ViewPublicPremarket.php?PublicGUID=".$obj->PublicGUID; ?></textarea></div>
                       </li>
                       <li><a></a></li><li><a></a></li>
-                      <li><a href="#" onClick="DeleteTrade('<?php echo $obj->TradeID; ?>');"><i class="fa fa-trash"></i></a>
+                      <li><a href="#" onClick="DeleteTrade('<?php echo $obj->PreMarketID; ?>');"><i class="fa fa-trash"></i></a>
                       </li>
                     </ul>
                     <div class="clearfix"></div>
@@ -103,7 +67,7 @@ for ($i = 0; $i < count($result ); $i++) {
 					      			
 						<?php
 							for ($j = 0; $j < count($obj->TradeURL); $j++) {
-								$arrayThumbnail = array("cloud_name" => "tradingjournal", "width"=>650, "crop"=>"scale", "quality"=>100);
+								$arrayThumbnail = array("cloud_name" => "tradingjournal", "width"=>650, "crop"=>"scale", "quality"=>"100");
 									$arrayFullImage = array("cloud_name" => "tradingjournal", "quality"=>100);
 									echo "<a href='" . Cloudinary::cloudinary_url($obj->Trade_PublicID[$j], $arrayFullImage) . "' data-ngthumb='" . Cloudinary::cloudinary_url($obj->Trade_PublicID[$j], $arrayThumbnail) . "'></a>";
 							}
@@ -122,53 +86,21 @@ for ($i = 0; $i < count($result ); $i++) {
                             <div class="block">
 							  <div class="block_content">
 								<h5 class="title" style="text-align:left">
-								  <a>Closed on</a>
+								  <a>430pm Difference</a>
 								</h5>
-								<p class="excerpt" style="text-align:left"><?php echo $obj->ExitDateTime; ?></p>
+								<p class="excerpt" style="text-align:left"><?php echo $obj->OPG430Difference; ?></p>
 							  </div>
 							  <div class="block_content">
 								<h5 class="title" style="text-align:left">
-								  <a>Lot Size</a>
+								  <a>1am Difference</a>
 								</h5>
-								<p class="excerpt" style="text-align:left"><?php echo $obj->LotSize; ?></p>
-							  </div>
+								<p class="excerpt" style="text-align:left"><?php echo $obj->OPG1amDifference; ?></p>
+							  </div>					  
 			     </div>
                           </div>
                           
                         </div>
-                      </div>
-                      <div class="col-md-3 col-sm-3 col-xs-12 form-group">
-                        <div class="row" style="text-align: center;">
-                          <div class="col-md-12">
-                            <div class="block">
-							  <div class="block_content">
-								<h5 class="title" style="text-align:left">
-								  <a>Trade Type</a>
-								</h5>
-								<p class="excerpt" style="text-align:left">
-									<?php 
-										if($obj->TradeType == "Missed"){
-											echo "<b><font color='red'>" . $obj->TradeType. "</font></b>";
-										} 
-										else if($obj->TradeType == "Statistics"){
-											echo "<font color='purple'>" . $obj->TradeType. "</font>";
-										}
-										else{
-											echo $obj->TradeType;
-										}
-									?></p>
-							  </div>
-							  <div class="block_content">
-								<h5 class="title" style="text-align:left">
-								  <a>Lesson Learned</a>
-								</h5>
-								<p class="excerpt" style="text-align:left"><?php echo $obj->LessonLearn; ?></p>
-							  </div>
-			    </div>
-                          </div>
-                          
-                        </div>
-                      </div>
+                      </div>                      
                       <div class="col-md-12 col-sm-12 col-xs-12 form-group">
                         <div class="row" style="text-align: center;">
                           <div class="col-md-12">
@@ -200,8 +132,7 @@ include("footer.php"); ?>
 
 <script type="text/javascript">
 
-
-	// jquery extend function
+    // jquery extend function
 	$.extend(
 	{
 	    redirectPost: function(location, args)
@@ -214,24 +145,25 @@ include("footer.php"); ?>
 	        $('<form action="' + location + '" method="POST">' + form + '</form>').appendTo($(document.body)).submit();
 	    }
 	});
-	$(document).ready(function () {
-		$('#mainRightCol').attr('style','');
+
+    $(document).ready(function () {
+	$('#mainRightCol').attr('style','');
 	
 
-    	});
-
-	function CopyURL(tradeid)
+    });
+    
+    function CopyURL(premarketid)
 	{
-		dummy = document.getElementById("PublicGUID" + tradeid);		
+		dummy = document.getElementById("PublicGUID" + premarketid);		
 		dummy.select();
     		document.execCommand("copy");
     		alert("URL link copied to clipboard.");
 	}
-	
-	function DeleteTrade(tradeid)
+    
+    function DeleteTrade(premarketid)
 	{
-	   if (confirm('Are you sure you want to delete this trade record?')) {
-		    $.redirectPost('PerformTransaction.php', { TradeID: tradeid, ActionType: "DeleteTrade" });	    
+	   if (confirm('Are you sure you want to delete this premarket record?')) {
+		    $.redirectPost('PerformTransaction.php', { PreMarketID: premarketid, ActionType: "DeletePreMarket" });	    
 	    } 
 	    
 	}

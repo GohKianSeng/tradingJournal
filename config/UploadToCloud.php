@@ -113,7 +113,7 @@ class UploadToCloudinary{
 		    $this->Message = "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
 		    $uploadOk = 0;
 		}
-		echo imageFileType ;
+		
 		// Check if $uploadOk is set to 0 by an error
 		if ($uploadOk == 0) {
 		    
@@ -179,7 +179,7 @@ class UploadToCloudinary{
 		        $cloudinaryResult = \Cloudinary\Uploader::upload($target_file, array(
 		            "unique_filename" => false,
 		            "use_filename" => true,
-		            "folder" => "Production",
+		            "folder" => "ProductionV2",
 		    	));
 		    	$this->CloudinaryResult = $cloudinaryResult; 	
 		    	if (isset($cloudinaryResult["signature"]) && isset($cloudinaryResult["secure_url"])){		    		    	

@@ -13,7 +13,7 @@
 		
 		
 		<!-- Custom Theme Scripts -->
-    <script src="../build/js/custom.js"></script>
+    <script src="../build/js/custom.js?23s1s"></script>
 		
   </body>
 </html>

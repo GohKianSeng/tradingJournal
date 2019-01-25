@@ -288,7 +288,7 @@ $(document).ready(function () {
 		    if( item.selected ) {
 		      
 		      
-		      var myKeyVals = { TradeID : "<?php echo $_GET["TradeID"] ?>", UserGUID : "<?php echo $_SESSION['UserGUID'] ?>", PublicID: item.GetID(), ActionType : "deleteImage" };
+		      var myKeyVals = { TradeID : "<?php echo $_GET["TradeID"] ?>", PublicID: item.GetID(), ActionType : "deleteImage" };
 		      
 		      var saveData = $.ajax({
 			      type: 'POST',
@@ -367,7 +367,7 @@ $(document).ready(function () {
 					                      </div>							  
 							  
 							  
-							  
+							<input type="hidden" name="PublicGUID" id="PublicGUID" value="<?php echo $tradeResult->PublicGUID ?>" >  
 							<input type="hidden" name="ActionType" id="ActionType" value="ModifyTrade" >
 							<input type="hidden" name="TradeID" id="TradeID" value="<?php echo $_GET["TradeID"] ?>" >  
 							</form>

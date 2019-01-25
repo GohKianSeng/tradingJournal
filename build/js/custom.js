@@ -313,7 +313,7 @@ if (typeof NProgress != 'undefined') {
             container = $(obj.currentTarget).siblings('.popover');
             timeout = self.timeout;
             container.one('mouseenter', function() {
-              //We entered the actual popover – call off the dogs
+              //We entered the actual popover â€“ call off the dogs
               clearTimeout(timeout);
               //Let's monitor popover content instead
               container.one('mouseleave', function() {
@@ -337,128 +337,44 @@ if (typeof NProgress != 'undefined') {
 		return new Date(year, month - 1, day).getTime();
 	}
 	  
-	
-	function init_flot_chart(){
-		
+	  
+	function init_tradingSummary111_chart(){
 		if( typeof ($.plot) === 'undefined'){ return; }
 		
-		console.log('init_flot_chart');
-		
-		
-		
-		var arr_data1 = [
-			[gd(2012, 1, 1), 17],
-			[gd(2012, 1, 2), 74],
-			[gd(2012, 1, 3), 6],
-			[gd(2012, 1, 4), 39],
-			[gd(2012, 1, 5), 20],
-			[gd(2012, 1, 6), 85],
-			[gd(2012, 1, 7), 7]
-		];
-
-		var arr_data2 = [
-		  [gd(2012, 1, 1), 82],
-		  [gd(2012, 1, 2), 23],
-		  [gd(2012, 1, 3), 66],
-		  [gd(2012, 1, 4), 9],
-		  [gd(2012, 1, 5), 119],
-		  [gd(2012, 1, 6), 6],
-		  [gd(2012, 1, 7), 9]
-		];
-		
-		var arr_data3 = [
-			[0, 1],
-			[1, 9],
-			[2, 6],
-			[3, 10],
-			[4, 5],
-			[5, 17],
-			[6, 6],
-			[7, 10],
-			[8, 7],
-			[9, 11],
-			[10, 35],
-			[11, 9],
-			[12, 12],
-			[13, 5],
-			[14, 3],
-			[15, 4],
-			[16, 9]
-		];
-		
-		var chart_plot_02_data = [];
-		
-		var chart_plot_03_data = [
-			[0, 1],
-			[1, 9],
-			[2, 6],
-			[3, 10],
-			[4, 5],
-			[5, 17],
-			[6, 6],
-			[7, 10],
-			[8, 7],
-			[9, 11],
-			[10, 35],
-			[11, 9],
-			[12, 12],
-			[13, 5],
-			[14, 3],
-			[15, 4],
-			[16, 9]
-		];
-		
-		
-		for (var i = 0; i < 30; i++) {
-		  chart_plot_02_data.push([new Date(Date.today().add(i).days()).getTime(), randNum() + i + i + 10]);
-		}
-		
-		
-		var chart_plot_01_settings = {
-          series: {
-            lines: {
-              show: false,
-              fill: true
-            },
-            splines: {
-              show: true,
-              tension: 0.4,
-              lineWidth: 1,
-              fill: 0.4
-            },
-            points: {
-              radius: 0,
-              show: true
-            },
-            shadowSize: 2
-          },
-          grid: {
-            verticalLines: true,
-            hoverable: true,
-            clickable: true,
-            tickColor: "#d5d5d5",
-            borderWidth: 1,
-            color: '#fff'
-          },
-          colors: ["rgba(38, 185, 154, 0.38)", "rgba(3, 88, 106, 0.38)"],
-          xaxis: {
-            tickColor: "rgba(51, 51, 51, 0.06)",
-            mode: "time",
-            tickSize: [1, "day"],
-            //tickLength: 10,
-            axisLabel: "Date",
-            axisLabelUseCanvas: true,
-            axisLabelFontSizePixels: 12,
-            axisLabelFontFamily: 'Verdana, Arial',
-            axisLabelPadding: 10
-          },
-          yaxis: {
-            ticks: 8,
-            tickColor: "rgba(51, 51, 51, 0.06)",
-          },
-          tooltip: false
-        }
-		
+		var chart_plot_IncrementalGross_data = [
+			[1547049600000,1.78],
+[1547136000000,2.09],
+[1547395200000,2.65],
+[1547481600000,5.11],
+[1547568000000,5.99]
+];
+	
+	var chart_plot_DailyGross_data = [
+			[1547049600000,1.78],
+[1547136000000,0.31],
+[1547395200000,0.56],
+[1547481600000,2.46],
+[1547568000000,0.88]
+];
+			
+	var chart_plot_ProfitTrade_data = [
+			[1547049600000,1],
+[1547136000000,1],
+[1547395200000,1],
+[1547481600000,3],
+[1547568000000,1]
+];
+			
+	var chart_plot_LossTrade_data = [
+			[1547395200000,1]
+];
+			
+	var chart_plot_MissedTrade_data = [
+			[1547136000000,1],
+[1547481600000,2],
+[1547568000000,1]
+];		
+			
 		var chart_plot_02_settings = {
 			grid: {
 				show: true,
@@ -472,21 +388,7 @@ if (typeof NProgress != 'undefined') {
 				clickable: true,
 				hoverable: true,
 				autoHighlight: true,
-				mouseActiveRadius: 100
-			},
-			series: {
-				lines: {
-					show: true,
-					fill: true,
-					lineWidth: 2,
-					steps: false
-				},
-				points: {
-					show: true,
-					radius: 4.5,
-					symbol: "circle",
-					lineWidth: 3.0
-				}
+				mouseActiveRadius: 20
 			},
 			legend: {
 				position: "ne",
@@ -496,7 +398,7 @@ if (typeof NProgress != 'undefined') {
 				labelFormatter: function(label, series) {
 					return label + '&nbsp;&nbsp;';
 				},
-				width: 40,
+				width: 70,
 				height: 1
 			},
 			colors: ['#96CA59', '#3F97EB', '#72c380', '#6f7a8a', '#f7cb38', '#5a8022', '#2c7282'],
@@ -505,89 +407,316 @@ if (typeof NProgress != 'undefined') {
 			tooltipOpts: {
 				content: "%s: %y.0",
 				xDateFormat: "%d/%m",
-			shifts: {
-				x: -30,
-				y: -50
-			},
+				shifts: {
+					x: -30,
+					y: -50
+				},
 			defaultTheme: false
 			},
-			yaxis: {
-				min: 0
+			yaxes: [ {position: "left", min: 0 }, { position: "left", min: 0}, {position: "right", min: 0 } ],
+			xaxis: {
+				mode: "time",
+				minTickSize: [1, "day"],
+				timeformat: "%d/%m/%y",
+				min: 1546185600000,
+				max: 1548950400000			}
+		};	
+	
+		
+		
+		
+		if ($("#chart_plot_02").length){
+			
+	
+		tbarWidth  = 0.5;
+		$.plot("#chart_plot_02", [ 
+		{
+			label: "Profit/Loss", 
+			data: chart_plot_DailyGross_data,
+			lines: { show: true },
+			points: { show: true },
+			xaxis: 1, 
+			yaxis: 1,
+			color: "black"
+		},
+		{
+			label: "Gross Profit/Loss", 
+			data: chart_plot_IncrementalGross_data,
+			lines: { show: true },
+			points: { show: true },
+			xaxis: 1, 
+			yaxis: 3,
+			color: "silver"
+		},
+		{
+			label: "Missed Trade", 
+			data: chart_plot_MissedTrade_data,
+			bars: { show: true,	barWidth: tbarWidth, align: "center", order: 1},
+			points: { show: true },
+			xaxis: 1, 
+			yaxis: 2,
+			color: "blue",
+			order: 1
+		},
+		{
+			label: "Profit Trade", 
+			data: chart_plot_ProfitTrade_data,
+			bars: { show: true,	barWidth: tbarWidth, align: "center", order: 2},
+			points: { show: true },
+			xaxis: 1, 
+			yaxis: 2,
+			color: "lime",
+			order: 2
+		},
+		{
+			label: "Loss Trade", 
+			data: chart_plot_LossTrade_data,
+			bars: { show: true,	barWidth: tbarWidth, align: "center", order: 3},
+			points: { show: true },
+			xaxis: 1, 
+			yaxis: 2,
+			color: "red",
+			order: 1
+		}], chart_plot_02_settings);
+			
+		
+		}
+		
+		$("<div id='tooltip'></div>").css({
+			position: "absolute",
+			display: "none",
+			border: "1px solid #fdd",
+			padding: "2px",
+			"background-color": "#fee",
+			opacity: 0.80
+		}).appendTo("body");
+	  
+	  
+	  $("#chart_plot_02").bind("plothover", function (event, pos, item) {
+
+			if (true) {
+				if (item) {
+					var date = "";
+					if(item.series.label == "Missed Trade" || item.series.label == "Profit Trade")
+					{
+						temp = new Date(item.datapoint[0]);
+						temp.setDate(temp.getDate() + 1);
+						date = temp.format("d M Y");													
+					}
+					else{
+						date = new Date(item.datapoint[0]).format("d M Y");
+					}
+					var x = date,
+						y = item.datapoint[1];
+
+					$("#tooltip").html(item.series.label + " of " + x + " = " + y)
+						.css({top: item.pageY+5, left: item.pageX+5})
+						.fadeIn(200);
+				} else {
+					$("#tooltip").hide();
+				}
+			}
+		});
+	}  
+	
+	function init_flot_chart(){
+		
+		if( typeof ($.plot) === 'undefined'){ return; }
+		
+		console.log('init_flot_chart');
+		
+		
+		
+		
+		var chart_plot_03_data = [];
+		var chart_plot_02_data = [];
+		
+		var chart_plot_03_data = [];
+		
+		var d2 = [];
+		var d3 = [];
+		var d4 = [];
+		
+		for (var i = 0; i < 35; i++) {
+          var tempDate = new Date(Date.today().add(i).days()).getTime();
+		  chart_plot_02_data.push([tempDate, randNum() + i + i + 10]);
+		  chart_plot_03_data.push([tempDate, randNum() * 10]);
+		  
+		  if(i % 3 == 0){
+			d2.push([tempDate, randNum() * 1 ]);
+		  }
+		  
+		  if(i % 9 == 0){
+			d4.push([tempDate, randNum() * 1 ]);
+		  }
+		  
+		  if(i % 1 == 0){
+			d3.push([tempDate, randNum() * 1 ]);
+		  }
+		}
+	
+			
+var chart_plot_02_settings = {
+			grid: {
+				show: true,
+				aboveData: true,
+				color: "#3f3f3f",
+				labelMargin: 10,
+				axisMargin: 0,
+				borderWidth: 0,
+				borderColor: null,
+				minBorderMargin: 5,
+				clickable: true,
+				hoverable: true,
+				autoHighlight: true,
+				mouseActiveRadius: 20
 			},
+			legend: {
+				position: "ne",
+				margin: [0, -25],
+				noColumns: 0,
+				labelBoxBorderColor: null,
+				labelFormatter: function(label, series) {
+					return label + '&nbsp;&nbsp;';
+				},
+				width: 70,
+				height: 1
+			},
+			colors: ['#96CA59', '#3F97EB', '#72c380', '#6f7a8a', '#f7cb38', '#5a8022', '#2c7282'],
+			shadowSize: 0,
+			tooltip: true,
+			tooltipOpts: {
+				content: "%s: %y.0",
+				xDateFormat: "%d/%m",
+				shifts: {
+					x: -30,
+					y: -50
+				},
+			defaultTheme: false
+			},
+			yaxes: [ {position: "left", min: 0 }, { position: "left", min: 10 }, {position: "right", min: 100 } ],
 			xaxis: {
 				mode: "time",
 				minTickSize: [1, "day"],
 				timeformat: "%d/%m/%y",
 				min: chart_plot_02_data[0][0],
-				max: chart_plot_02_data[20][0]
+				max: chart_plot_02_data[chart_plot_02_data.length-1][0]
 			}
 		};	
 	
-		var chart_plot_03_settings = {
-			series: {
-				curvedLines: {
-					apply: true,
-					active: true,
-					monotonicFit: true
-				}
-			},
-			colors: ["#26B99A"],
-			grid: {
-				borderWidth: {
-					top: 0,
-					right: 0,
-					bottom: 1,
-					left: 1
-				},
-				borderColor: {
-					bottom: "#7F8790",
-					left: "#7F8790"
-				}
-			}
-		};
-        
 		
-        if ($("#chart_plot_01").length){
-			console.log('Plot1');
-			
-			$.plot( $("#chart_plot_01"), [ arr_data1, arr_data2 ],  chart_plot_01_settings );
-		}
 		
 		
 		if ($("#chart_plot_02").length){
 			console.log('Plot2');
-			
+			/*
 			$.plot( $("#chart_plot_02"), 
 			[{ 
 				label: "Email Sent", 
-				data: chart_plot_02_data, 
+				data: {chart_plot_02_data},
 				lines: { 
 					fillColor: "rgba(150, 202, 89, 0.12)" 
 				}, 
 				points: { 
 					fillColor: "#fff" } 
+			},
+			{
+				label: "Email Sessnt", 
+				data: {d2, xaxis: 1, yaxis: 1},
+				bars: { show: true }
 			}], chart_plot_02_settings);
+			*/
+	
+		tbarWidth  = 0.1;
+		$.plot("#chart_plot_02", [ 
+		{
+			label: "Profit/Loss", 
+			data: chart_plot_02_data,
+			lines: { show: true },
+			points: { show: true },
+			xaxis: 1, 
+			yaxis: 1,
+			color: "black"
+		},
+		{
+			label: "Gross Profit/Loss", 
+			data: chart_plot_03_data,
+			lines: { show: true },
+			points: { show: true },
+			xaxis: 1, 
+			yaxis: 3,
+			color: "silver"
+		},
+		{
+			label: "Missed Trade", 
+			data: d4,
+			bars: { show: true,	barWidth: tbarWidth, align: "center", order: 1},
+			points: { show: true },
+			xaxis: 1, 
+			yaxis: 2,
+			color: "blue",
+			order: 1
+		},
+		{
+			label: "Profit Trade", 
+			data: d2,
+			bars: { show: true,	barWidth: tbarWidth, align: "center", order: 2},
+			points: { show: true },
+			xaxis: 1, 
+			yaxis: 2,
+			color: "lime",
+			order: 2
+		},
+		{
+			label: "Loss Trade", 
+			data: d3,
+			bars: { show: true,	barWidth: tbarWidth, align: "center", order: 3},
+			points: { show: true },
+			xaxis: 1, 
+			yaxis: 2,
+			color: "red",
+			order: 1
+		}], chart_plot_02_settings);
 			
+		
 		}
 		
-		if ($("#chart_plot_03").length){
-			console.log('Plot3');
-			
-			
-			$.plot($("#chart_plot_03"), [{
-				label: "Registrations",
-				data: chart_plot_03_data,
-				lines: {
-					fillColor: "rgba(150, 202, 89, 0.12)"
-				}, 
-				points: {
-					fillColor: "#fff"
-				}
-			}], chart_plot_03_settings);
-			
-		};
+		$("<div id='tooltip'></div>").css({
+			position: "absolute",
+			display: "none",
+			border: "1px solid #fdd",
+			padding: "2px",
+			"background-color": "#fee",
+			opacity: 0.80
+		}).appendTo("body");
 	  
-	} 
+	  
+	  $("#chart_plot_02").bind("plothover", function (event, pos, item) {
+
+			if (true) {
+				if (item) {
+					var date = "";
+					if(item.series.label == "Missed Trade" || item.series.label == "Profit Trade")
+					{
+						temp = new Date(item.datapoint[0]);
+						temp.setDate(temp.getDate() + 1);
+						date = temp.format("d M Y");													
+					}
+					else{
+						date = new Date(item.datapoint[0]).format("d M Y");
+					}
+					var x = date,
+						y = item.datapoint[1];
+
+					$("#tooltip").html(item.series.label + " of " + x + " = " + y)
+						.css({top: item.pageY+5, left: item.pageX+5})
+						.fadeIn(200);
+				} else {
+					$("#tooltip").hide();
+				}
+			}
+		});
+	}
 	
 		
 	/* STARRR */
@@ -924,7 +1053,7 @@ if (typeof NProgress != 'undefined') {
 			if( typeof ($.fn.autocomplete) === 'undefined'){ return; }
 			console.log('init_autocomplete');
 			
-			var countries = { AD:"Andorra",A2:"Andorra Test",AE:"United Arab Emirates",AF:"Afghanistan",AG:"Antigua and Barbuda",AI:"Anguilla",AL:"Albania",AM:"Armenia",AN:"Netherlands Antilles",AO:"Angola",AQ:"Antarctica",AR:"Argentina",AS:"American Samoa",AT:"Austria",AU:"Australia",AW:"Aruba",AX:"Åland Islands",AZ:"Azerbaijan",BA:"Bosnia and Herzegovina",BB:"Barbados",BD:"Bangladesh",BE:"Belgium",BF:"Burkina Faso",BG:"Bulgaria",BH:"Bahrain",BI:"Burundi",BJ:"Benin",BL:"Saint Barthélemy",BM:"Bermuda",BN:"Brunei",BO:"Bolivia",BQ:"British Antarctic Territory",BR:"Brazil",BS:"Bahamas",BT:"Bhutan",BV:"Bouvet Island",BW:"Botswana",BY:"Belarus",BZ:"Belize",CA:"Canada",CC:"Cocos [Keeling] Islands",CD:"Congo - Kinshasa",CF:"Central African Republic",CG:"Congo - Brazzaville",CH:"Switzerland",CI:"Côte d’Ivoire",CK:"Cook Islands",CL:"Chile",CM:"Cameroon",CN:"China",CO:"Colombia",CR:"Costa Rica",CS:"Serbia and Montenegro",CT:"Canton and Enderbury Islands",CU:"Cuba",CV:"Cape Verde",CX:"Christmas Island",CY:"Cyprus",CZ:"Czech Republic",DD:"East Germany",DE:"Germany",DJ:"Djibouti",DK:"Denmark",DM:"Dominica",DO:"Dominican Republic",DZ:"Algeria",EC:"Ecuador",EE:"Estonia",EG:"Egypt",EH:"Western Sahara",ER:"Eritrea",ES:"Spain",ET:"Ethiopia",FI:"Finland",FJ:"Fiji",FK:"Falkland Islands",FM:"Micronesia",FO:"Faroe Islands",FQ:"French Southern and Antarctic Territories",FR:"France",FX:"Metropolitan France",GA:"Gabon",GB:"United Kingdom",GD:"Grenada",GE:"Georgia",GF:"French Guiana",GG:"Guernsey",GH:"Ghana",GI:"Gibraltar",GL:"Greenland",GM:"Gambia",GN:"Guinea",GP:"Guadeloupe",GQ:"Equatorial Guinea",GR:"Greece",GS:"South Georgia and the South Sandwich Islands",GT:"Guatemala",GU:"Guam",GW:"Guinea-Bissau",GY:"Guyana",HK:"Hong Kong SAR China",HM:"Heard Island and McDonald Islands",HN:"Honduras",HR:"Croatia",HT:"Haiti",HU:"Hungary",ID:"Indonesia",IE:"Ireland",IL:"Israel",IM:"Isle of Man",IN:"India",IO:"British Indian Ocean Territory",IQ:"Iraq",IR:"Iran",IS:"Iceland",IT:"Italy",JE:"Jersey",JM:"Jamaica",JO:"Jordan",JP:"Japan",JT:"Johnston Island",KE:"Kenya",KG:"Kyrgyzstan",KH:"Cambodia",KI:"Kiribati",KM:"Comoros",KN:"Saint Kitts and Nevis",KP:"North Korea",KR:"South Korea",KW:"Kuwait",KY:"Cayman Islands",KZ:"Kazakhstan",LA:"Laos",LB:"Lebanon",LC:"Saint Lucia",LI:"Liechtenstein",LK:"Sri Lanka",LR:"Liberia",LS:"Lesotho",LT:"Lithuania",LU:"Luxembourg",LV:"Latvia",LY:"Libya",MA:"Morocco",MC:"Monaco",MD:"Moldova",ME:"Montenegro",MF:"Saint Martin",MG:"Madagascar",MH:"Marshall Islands",MI:"Midway Islands",MK:"Macedonia",ML:"Mali",MM:"Myanmar [Burma]",MN:"Mongolia",MO:"Macau SAR China",MP:"Northern Mariana Islands",MQ:"Martinique",MR:"Mauritania",MS:"Montserrat",MT:"Malta",MU:"Mauritius",MV:"Maldives",MW:"Malawi",MX:"Mexico",MY:"Malaysia",MZ:"Mozambique",NA:"Namibia",NC:"New Caledonia",NE:"Niger",NF:"Norfolk Island",NG:"Nigeria",NI:"Nicaragua",NL:"Netherlands",NO:"Norway",NP:"Nepal",NQ:"Dronning Maud Land",NR:"Nauru",NT:"Neutral Zone",NU:"Niue",NZ:"New Zealand",OM:"Oman",PA:"Panama",PC:"Pacific Islands Trust Territory",PE:"Peru",PF:"French Polynesia",PG:"Papua New Guinea",PH:"Philippines",PK:"Pakistan",PL:"Poland",PM:"Saint Pierre and Miquelon",PN:"Pitcairn Islands",PR:"Puerto Rico",PS:"Palestinian Territories",PT:"Portugal",PU:"U.S. Miscellaneous Pacific Islands",PW:"Palau",PY:"Paraguay",PZ:"Panama Canal Zone",QA:"Qatar",RE:"Réunion",RO:"Romania",RS:"Serbia",RU:"Russia",RW:"Rwanda",SA:"Saudi Arabia",SB:"Solomon Islands",SC:"Seychelles",SD:"Sudan",SE:"Sweden",SG:"Singapore",SH:"Saint Helena",SI:"Slovenia",SJ:"Svalbard and Jan Mayen",SK:"Slovakia",SL:"Sierra Leone",SM:"San Marino",SN:"Senegal",SO:"Somalia",SR:"Suriname",ST:"São Tomé and Príncipe",SU:"Union of Soviet Socialist Republics",SV:"El Salvador",SY:"Syria",SZ:"Swaziland",TC:"Turks and Caicos Islands",TD:"Chad",TF:"French Southern Territories",TG:"Togo",TH:"Thailand",TJ:"Tajikistan",TK:"Tokelau",TL:"Timor-Leste",TM:"Turkmenistan",TN:"Tunisia",TO:"Tonga",TR:"Turkey",TT:"Trinidad and Tobago",TV:"Tuvalu",TW:"Taiwan",TZ:"Tanzania",UA:"Ukraine",UG:"Uganda",UM:"U.S. Minor Outlying Islands",US:"United States",UY:"Uruguay",UZ:"Uzbekistan",VA:"Vatican City",VC:"Saint Vincent and the Grenadines",VD:"North Vietnam",VE:"Venezuela",VG:"British Virgin Islands",VI:"U.S. Virgin Islands",VN:"Vietnam",VU:"Vanuatu",WF:"Wallis and Futuna",WK:"Wake Island",WS:"Samoa",YD:"People's Democratic Republic of Yemen",YE:"Yemen",YT:"Mayotte",ZA:"South Africa",ZM:"Zambia",ZW:"Zimbabwe",ZZ:"Unknown or Invalid Region" };
+			var countries = { AD:"Andorra",A2:"Andorra Test",AE:"United Arab Emirates",AF:"Afghanistan",AG:"Antigua and Barbuda",AI:"Anguilla",AL:"Albania",AM:"Armenia",AN:"Netherlands Antilles",AO:"Angola",AQ:"Antarctica",AR:"Argentina",AS:"American Samoa",AT:"Austria",AU:"Australia",AW:"Aruba",AX:"Ã…land Islands",AZ:"Azerbaijan",BA:"Bosnia and Herzegovina",BB:"Barbados",BD:"Bangladesh",BE:"Belgium",BF:"Burkina Faso",BG:"Bulgaria",BH:"Bahrain",BI:"Burundi",BJ:"Benin",BL:"Saint BarthÃ©lemy",BM:"Bermuda",BN:"Brunei",BO:"Bolivia",BQ:"British Antarctic Territory",BR:"Brazil",BS:"Bahamas",BT:"Bhutan",BV:"Bouvet Island",BW:"Botswana",BY:"Belarus",BZ:"Belize",CA:"Canada",CC:"Cocos [Keeling] Islands",CD:"Congo - Kinshasa",CF:"Central African Republic",CG:"Congo - Brazzaville",CH:"Switzerland",CI:"CÃ´te dâ€™Ivoire",CK:"Cook Islands",CL:"Chile",CM:"Cameroon",CN:"China",CO:"Colombia",CR:"Costa Rica",CS:"Serbia and Montenegro",CT:"Canton and Enderbury Islands",CU:"Cuba",CV:"Cape Verde",CX:"Christmas Island",CY:"Cyprus",CZ:"Czech Republic",DD:"East Germany",DE:"Germany",DJ:"Djibouti",DK:"Denmark",DM:"Dominica",DO:"Dominican Republic",DZ:"Algeria",EC:"Ecuador",EE:"Estonia",EG:"Egypt",EH:"Western Sahara",ER:"Eritrea",ES:"Spain",ET:"Ethiopia",FI:"Finland",FJ:"Fiji",FK:"Falkland Islands",FM:"Micronesia",FO:"Faroe Islands",FQ:"French Southern and Antarctic Territories",FR:"France",FX:"Metropolitan France",GA:"Gabon",GB:"United Kingdom",GD:"Grenada",GE:"Georgia",GF:"French Guiana",GG:"Guernsey",GH:"Ghana",GI:"Gibraltar",GL:"Greenland",GM:"Gambia",GN:"Guinea",GP:"Guadeloupe",GQ:"Equatorial Guinea",GR:"Greece",GS:"South Georgia and the South Sandwich Islands",GT:"Guatemala",GU:"Guam",GW:"Guinea-Bissau",GY:"Guyana",HK:"Hong Kong SAR China",HM:"Heard Island and McDonald Islands",HN:"Honduras",HR:"Croatia",HT:"Haiti",HU:"Hungary",ID:"Indonesia",IE:"Ireland",IL:"Israel",IM:"Isle of Man",IN:"India",IO:"British Indian Ocean Territory",IQ:"Iraq",IR:"Iran",IS:"Iceland",IT:"Italy",JE:"Jersey",JM:"Jamaica",JO:"Jordan",JP:"Japan",JT:"Johnston Island",KE:"Kenya",KG:"Kyrgyzstan",KH:"Cambodia",KI:"Kiribati",KM:"Comoros",KN:"Saint Kitts and Nevis",KP:"North Korea",KR:"South Korea",KW:"Kuwait",KY:"Cayman Islands",KZ:"Kazakhstan",LA:"Laos",LB:"Lebanon",LC:"Saint Lucia",LI:"Liechtenstein",LK:"Sri Lanka",LR:"Liberia",LS:"Lesotho",LT:"Lithuania",LU:"Luxembourg",LV:"Latvia",LY:"Libya",MA:"Morocco",MC:"Monaco",MD:"Moldova",ME:"Montenegro",MF:"Saint Martin",MG:"Madagascar",MH:"Marshall Islands",MI:"Midway Islands",MK:"Macedonia",ML:"Mali",MM:"Myanmar [Burma]",MN:"Mongolia",MO:"Macau SAR China",MP:"Northern Mariana Islands",MQ:"Martinique",MR:"Mauritania",MS:"Montserrat",MT:"Malta",MU:"Mauritius",MV:"Maldives",MW:"Malawi",MX:"Mexico",MY:"Malaysia",MZ:"Mozambique",NA:"Namibia",NC:"New Caledonia",NE:"Niger",NF:"Norfolk Island",NG:"Nigeria",NI:"Nicaragua",NL:"Netherlands",NO:"Norway",NP:"Nepal",NQ:"Dronning Maud Land",NR:"Nauru",NT:"Neutral Zone",NU:"Niue",NZ:"New Zealand",OM:"Oman",PA:"Panama",PC:"Pacific Islands Trust Territory",PE:"Peru",PF:"French Polynesia",PG:"Papua New Guinea",PH:"Philippines",PK:"Pakistan",PL:"Poland",PM:"Saint Pierre and Miquelon",PN:"Pitcairn Islands",PR:"Puerto Rico",PS:"Palestinian Territories",PT:"Portugal",PU:"U.S. Miscellaneous Pacific Islands",PW:"Palau",PY:"Paraguay",PZ:"Panama Canal Zone",QA:"Qatar",RE:"RÃ©union",RO:"Romania",RS:"Serbia",RU:"Russia",RW:"Rwanda",SA:"Saudi Arabia",SB:"Solomon Islands",SC:"Seychelles",SD:"Sudan",SE:"Sweden",SG:"Singapore",SH:"Saint Helena",SI:"Slovenia",SJ:"Svalbard and Jan Mayen",SK:"Slovakia",SL:"Sierra Leone",SM:"San Marino",SN:"Senegal",SO:"Somalia",SR:"Suriname",ST:"SÃ£o TomÃ© and PrÃ­ncipe",SU:"Union of Soviet Socialist Republics",SV:"El Salvador",SY:"Syria",SZ:"Swaziland",TC:"Turks and Caicos Islands",TD:"Chad",TF:"French Southern Territories",TG:"Togo",TH:"Thailand",TJ:"Tajikistan",TK:"Tokelau",TL:"Timor-Leste",TM:"Turkmenistan",TN:"Tunisia",TO:"Tonga",TR:"Turkey",TT:"Trinidad and Tobago",TV:"Tuvalu",TW:"Taiwan",TZ:"Tanzania",UA:"Ukraine",UG:"Uganda",UM:"U.S. Minor Outlying Islands",US:"United States",UY:"Uruguay",UZ:"Uzbekistan",VA:"Vatican City",VC:"Saint Vincent and the Grenadines",VD:"North Vietnam",VE:"Venezuela",VG:"British Virgin Islands",VI:"U.S. Virgin Islands",VN:"Vietnam",VU:"Vanuatu",WF:"Wallis and Futuna",WK:"Wake Island",WS:"Samoa",YD:"People's Democratic Republic of Yemen",YE:"Yemen",YT:"Mayotte",ZA:"South Africa",ZM:"Zambia",ZW:"Zimbabwe",ZZ:"Unknown or Invalid Region" };
 
 			var countriesArray = $.map(countries, function(value, key) {
 			  return {
@@ -1939,7 +2068,7 @@ if (typeof NProgress != 'undefined') {
 					container = $(obj.currentTarget).siblings('.popover');
 					timeout = self.timeout;
 					container.one('mouseenter', function() {
-					  //We entered the actual popover – call off the dogs
+					  //We entered the actual popover â€“ call off the dogs
 					  clearTimeout(timeout);
 					  //Let's monitor popover content instead
 					  container.one('mouseleave', function() {
@@ -3132,7 +3261,7 @@ if (typeof NProgress != 'undefined') {
 				},
 				calculable: true,
 				series: [{
-				  name: '漏斗图',
+				  name: 'æ¼æ–—å›¾',
 				  type: 'funnel',
 				  width: '40%',
 				  data: [{
@@ -4234,7 +4363,7 @@ if (typeof NProgress != 'undefined') {
 				},
 				calculable: true,
 				series: [{
-				  name: '访问来源',
+				  name: 'è®¿é—®æ¥æº',
 				  type: 'pie',
 				  radius: '55%',
 				  center: ['50%', '48%'],
@@ -4301,7 +4430,7 @@ if (typeof NProgress != 'undefined') {
 				  itemGap: 20,
 				  textStyle: {
 					color: 'rgba(30,144,255,0.8)',
-					fontFamily: '微软雅黑',
+					fontFamily: 'å¾®è½¯é›…é»‘',
 					fontSize: 35,
 					fontWeight: 'bolder'
 				  }
@@ -5007,7 +5136,7 @@ if (typeof NProgress != 'undefined') {
 	$(document).ready(function() {
 				
 		init_sparklines();
-		init_flot_chart();
+		//init_flot_chart();
 		init_sidebar();
 		init_wysiwyg();
 		init_InputMask();

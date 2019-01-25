@@ -7,30 +7,12 @@ span.ex1 {
 </style>
 
 <?php 
-include("header.php"); 
+include("header_forPublic.php"); 
 include './cloudinary/Cloudinary.php';
 include './config/CommonFunction.php';
-	
-$sqlconn = new MysqlConn();		
-$DateStart = date('Y-m-01');
-$DateEnd = date('Y-m-t');
-
-if (isset($_GET["Date"]) && strlen($_GET["Date"]) > 0){
-	$DateStart = $_GET["Date"];
-	$dateTime = strtotime($_GET["Date"]);
-	$DateEnd = date('Y-m-t', $dateTime);
-}
-if (isset($_GET["LessonLearnID"])){
-	$result = $sqlconn->GetAllLessonLearnTrades($DateStart, $DateEnd, $_GET["LessonLearnID"]);
-}
-else if (isset($_GET["StrategyID"])){
-	$result = $sqlconn->GetAllStrategyTrades($DateStart, $DateEnd, $_GET["StrategyID"], $_GET["ProfitLoss"]);
-}
-else{
-	$result = $sqlconn->GetAllTrades();
-}
-
-
+			
+$sqlconn = new MysqlConn();
+$result = $sqlconn->GetPublicGUIDTrade($_GET["PublicGUID"]);
 for ($i = 0; $i < count($result ); $i++) {
 	$obj = $result[$i];
 ?>		
@@ -58,15 +40,7 @@ for ($i = 0; $i < count($result ); $i++) {
 						</font>
 					</h2>
 					<ul class="nav navbar-right panel_toolbox">
-                      <li><a href="ModifyTradeV2.php?ActionType=ModifyV2&TradeID=<?php echo $obj->TradeID; ?>"><i class="fa fa-pencil"></i></a>
-                      </li>
-                      <li><a></a></li><li><a></a></li>
-                      <li><a href="#" onClick="CopyURL('<?php echo $obj->TradeID; ?>');"><i class="fa fa-share-alt"></i></a>
-                      	<div style="display:block"><textarea style="width:0px;height:0px;opacity:0" name="PublicGUID<?php echo $obj->TradeID; ?>" id="PublicGUID<?php echo $obj->TradeID; ?>"><?php echo url()."/ViewPublicTrade.php?PublicGUID=".$obj->PublicGUID; ?></textarea></div>
-                      </li>
-                      <li><a></a></li><li><a></a></li>
-                      <li><a href="#" onClick="DeleteTrade('<?php echo $obj->TradeID; ?>');"><i class="fa fa-trash"></i></a>
-                      </li>
+                      
                     </ul>
                     <div class="clearfix"></div>
                   </div>
@@ -76,8 +50,9 @@ for ($i = 0; $i < count($result ); $i++) {
                       <div class="col-md-5 col-sm-5 col-xs-12 form-group">
                         
                         <?php
-                        	if(count($obj->TradeURL) > 0){
                         
+                        	if(count($obj->TradeURL) > 0){
+                        	
                         ?>
                         
                         	<div ID="ngy2p<?php echo $i; ?>" style="overflow: visible;opacity: 1;width: 100%;" data-nanogallery2='{
@@ -103,7 +78,7 @@ for ($i = 0; $i < count($result ); $i++) {
 					      			
 						<?php
 							for ($j = 0; $j < count($obj->TradeURL); $j++) {
-								$arrayThumbnail = array("cloud_name" => "tradingjournal", "width"=>650, "crop"=>"scale", "quality"=>100);
+								$arrayThumbnail = array("cloud_name" => "tradingjournal", "width"=>650, "crop"=>"scale", "quality"=>"100");
 									$arrayFullImage = array("cloud_name" => "tradingjournal", "quality"=>100);
 									echo "<a href='" . Cloudinary::cloudinary_url($obj->Trade_PublicID[$j], $arrayFullImage) . "' data-ngthumb='" . Cloudinary::cloudinary_url($obj->Trade_PublicID[$j], $arrayThumbnail) . "'></a>";
 							}
@@ -219,7 +194,7 @@ include("footer.php"); ?>
 	
 
     	});
-
+CopyURL
 	function CopyURL(tradeid)
 	{
 		dummy = document.getElementById("PublicGUID" + tradeid);		

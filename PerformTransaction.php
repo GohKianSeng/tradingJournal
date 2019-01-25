@@ -35,11 +35,51 @@ if ( ! empty( $_POST ) ) {
 		
 		echo $returnString;
 	}
+	else if($_POST["ActionType"] == "UploadPremarketImage"){
+		$fileUploadtotal = count($_FILES['file']['name']);
+		$TradeURL1_temp = new UploadToCloudinary();
+		$TradeURL1_temp->UploadNowV3("file");
+		$returnString = "";	
+		if($TradeURL1_temp->uploadSuccessfully == 1){
+			$TradeURL = $TradeURL1_temp->CloudinaryResult["secure_url"];
+			$Trade_PublicID = $TradeURL1_temp->CloudinaryResult["public_id"];
+				
+			$sqlconn = new MysqlConn();
+			$tradeResult = $sqlconn->AddPremarketImage($TradeURL, $Trade_PublicID, $_POST["PremarketID"]);
+			$returnString = $Trade_PublicID;
+			
+			
+			$arrayThumbnail = array("cloud_name" => "tradingjournal", "width"=>250, "crop"=>"scale", "quality"=>"auto");
+			$arrayFullImage = array("cloud_name" => "tradingjournal", "quality"=>100);
+			
+			
+			$returnString = $returnString . "{" . Cloudinary::cloudinary_url($Trade_PublicID, $arrayFullImage);
+			$returnString = $returnString . "{" . Cloudinary::cloudinary_url($Trade_PublicID, $arrayThumbnail);
+		}
+		else{
+			//uploading error;
+		}
+		
+		echo $returnString;
+	}
 	else if($_POST["ActionType"] == "deleteImage"){
-		echo $_POST["PublicID"];
 		
 		$sqlconn = new MysqlConn();
 		$sqlconn->DeleteImage($_POST["TradeID"], $_POST["PublicID"]);
+				
+		$oldFile = new UploadToCloudinary();
+		$oldFile->Delete($_POST["PublicID"]);
+		
+		echo "Deleted";
+	}
+	else if($_POST["ActionType"] == "deletePremarketImage"){
+		
+		$sqlconn = new MysqlConn();
+		$sqlconn->DeletePremarketImage($_POST["PremarketID"], $_POST["PublicID"]);
+		
+		$oldFile = new UploadToCloudinary();
+		$oldFile->Delete($_POST["PublicID"]);
+		
 		echo "Deleted";
 	}
 	else if($_POST["ActionType"] == "ModifyTrade"){
@@ -93,14 +133,14 @@ if ( ! empty( $_POST ) ) {
 			}
 			
 			$sqlconn = new MysqlConn();
-			$result = $sqlconn->ModifyTrade($_POST["TradeID"], $_POST["Symbol"], $_POST["StrategyID"], $_POST["TradeType"], $_POST["OrderType"], $_POST["LotSize"], $_POST["EntryDateTime"], $_POST["EntryPrice"], $_POST["SL_Pips"], $_POST["TP_Pips"], $_POST["ExitDateTime"], $_POST["ExitPrice"], $_POST["ProfitLoss"], $_POST["Remarks"], $TradeURL1, $TradeURL1_PublicID, $_POST["IMCRemarks"], $IMC_URL, $IMC_URL_PublicID, $_POST["LessonLearn"]);
+			$result = $sqlconn->ModifyTrade($_POST["TradeID"], $_POST["Symbol"], $_POST["StrategyID"], $_POST["TradeType"], $_POST["OrderType"], $_POST["LotSize"], $_POST["EntryDateTime"], $_POST["EntryPrice"], $_POST["SL_Pips"], $_POST["TP_Pips"], $_POST["ExitDateTime"], $_POST["ExitPrice"], $_POST["ProfitLoss"], $_POST["Remarks"], $TradeURL1, $TradeURL1_PublicID, $_POST["IMCRemarks"], $IMC_URL, $IMC_URL_PublicID, $_POST["LessonLearn"], $_POST["PublicGUID"]);		    				    		
 		    		
 		    	if ( $result == true ) {
-		    		header('Location: main_trades.php?Message='.'Trade Modified Successfully.');
+		    		header('Location: ViewTrades.php?Message='.'Trade Modified Successfully.');
 
 		    	}
 		    	else{
-		    		header('Location: main_trades.php?Message='.'Trade Modification Failed.');
+		    		header('Location: ViewTrades.php?Message='.'Trade Modification Failed.');
  		
 		    	}
 		}
@@ -112,8 +152,6 @@ if ( ! empty( $_POST ) ) {
 			$sqlconn = new MysqlConn();
 			$tradeResult = $sqlconn->GetSelectedTrade($_POST["TradeID"]);
 
-			echo $tradeResult->TradeURL[0];
-			echo $tradeResult->TradeURL[1];
 			$fileUploadtotal = count($tradeResult->TradeURL);
 			for( $i=0 ; $i < $fileUploadtotal ; $i++ ) {
 				$oldFile = new UploadToCloudinary();
@@ -141,7 +179,7 @@ if ( ! empty( $_POST ) ) {
 			$sqlconn = new MysqlConn();
 			$result = $sqlconn->DeleteTrade($_POST["TradeID"]);
 			
-			header('Location: main_trades.php?Message='.'Trade Deleted Successfully.');
+			header('Location: ViewTrades.php?Message=Trade Deleted Successfully.');
 		}
 	}
 	else if($_POST["ActionType"] == "AddTradeV2"){
@@ -152,7 +190,8 @@ if ( ! empty( $_POST ) ) {
 			$Trade_PublicID = array();
 			
 			$fileUploadtotal = count($_FILES['TradeImages']['name']);
-			for( $i=0 ; $i < $fileUploadtotal ; $i++ ) {
+			
+			for( $i=0 ; $i < $fileUploadtotal && $i < 10 ; $i++ ) {
 				$TradeURL1_temp = new UploadToCloudinary();
 				$TradeURL1_temp->UploadNowV2("TradeImages", $i);
 				
@@ -170,11 +209,11 @@ if ( ! empty( $_POST ) ) {
 			$result = $sqlconn->AddTradeV2($_POST["Symbol"], $_POST["StrategyID"], $_POST["TradeType"], $_POST["OrderType"], $_POST["LotSize"], $_POST["EntryDateTime"], $_POST["EntryPrice"], $_POST["SL_Pips"], $_POST["TP_Pips"], $_POST["ExitDateTime"], $_POST["ExitPrice"], $_POST["ProfitLoss"], $_POST["Remarks"], $_POST["IMCRemarks"], $_POST["LessonLearn"], $TradeURL, $Trade_PublicID);
 		    		
 		    	if ( $result == true ) {
-		    		header('Location: main_trades.php?Message='.'Trade Added Successfully.');
+		    		header('Location: ViewTrades.php?Message='.'Trade Added Successfully.');
 
 		    	}
 		    	else{
-		    		header('Location: main_trades.php?Message='.'Trade Not Added');
+		    		header('Location: ViewTrades.php?Message='.'Trade Not Added');
  		
 		    	}
 		}
@@ -229,6 +268,13 @@ if ( ! empty( $_POST ) ) {
 						
 			$sqlconn = new MysqlConn();
 			$old_result = $sqlconn->GetSelectedPreMarket($_POST["PreMarketID"]);
+			
+			$fileUploadtotal = count($old_result->TradeURL);
+			for( $i=0 ; $i < $fileUploadtotal ; $i++ ) {
+				$oldFile = new UploadToCloudinary();
+				$oldFile->Delete($old_result->Trade_PublicID[$i]);
+			}
+			
 			if(isset($old_result->MySR_PublicID)){
 				$oldFile = new UploadToCloudinary();
 				$oldFile->Delete($old_result->MySR_PublicID);
@@ -244,11 +290,11 @@ if ( ! empty( $_POST ) ) {
 			$result = $sqlconn->DeletePreMarket($_POST["PreMarketID"]);
 		    		
 		    	if ( $result == true ) {
-		    		header('Location: main_premarket.php?Message=Pre-Market Delete Successfully.');
+		    		header('Location: ViewPremarket.php?Message=Pre-Market Delete Successfully.');
 
 		    	}
 		    	else{
-		    		header('Location: main_premarket.php?Message=Pre-Market Delete Failed.'); 		
+		    		header('Location: ViewPremarket.php?Message=Pre-Market Delete Failed.'); 		
 		    	}
 		}
 	}
@@ -330,14 +376,70 @@ if ( ! empty( $_POST ) ) {
 
 			
 			
-			$result = $sqlconn->ModifyPreMarket($_POST["PreMarketID"], $_POST["MarketDate"], $OPG430Diff, $OPG1amDiff, $Remarks, $mySR_URL, $mySR_PublicID, $RaymondSR_URL, $RaymondSR_PublicID);
+			$result = $sqlconn->ModifyPreMarket($_POST["PreMarketID"], $_POST["MarketDate"], $OPG430Diff, $OPG1amDiff, $Remarks, $mySR_URL, $mySR_PublicID, $RaymondSR_URL, $RaymondSR_PublicID, $_POST["PublicGUID"]);
 		    		
 		    	if ( $result == true ) {
-		    		header('Location: main_premarket.php?Message=Pre-Market Modify Successfully.');
+		    		header('Location: ViewPremarket.php?Message=Pre-Market Modify Successfully.');
 
 		    	}
 		    	else{
-		    		header('Location: main_premarket.php?Message=Pre-Market Modify Failed.');
+		    		header('Location: ViewPremarket.php?Message=Pre-Market Modify Failed.');
+ 		
+		    	}
+		}
+	}
+	else if($_POST["ActionType"] == "AddPreMarketV2"){
+	
+		if (isset( $_POST["MarketDate"])) {
+			$OPG430Diff = null;
+			$OPG1amDiff = null;
+			$Remarks = null;
+			$mySR_URL = null;
+			$mySR_PublicID = null;
+			$RaymondSR_URL = null;
+			$RaymondSR_PublicID = null;
+		
+			if(isset($_POST["OPG430Difference"])){
+				$OPG430Diff = $_POST["OPG430Difference"];
+			}
+			
+			if(isset($_POST["OPG1amDifference"])){
+				$OPG1amDiff = $_POST["OPG1amDifference"];
+			}
+
+			if(isset($_POST["Remarks"])){
+				$Remarks = $_POST["Remarks"];
+			}
+
+						
+			$TradeURL = array();
+			$Trade_PublicID = array();
+			
+			$fileUploadtotal = count($_FILES['TradeImages']['name']);
+			for( $i=0 ; $i < $fileUploadtotal && $i < 10; $i++ ) {
+				$TradeURL1_temp = new UploadToCloudinary();
+				$TradeURL1_temp->UploadNowV2("TradeImages", $i);
+				
+				if($TradeURL1_temp->uploadSuccessfully == 1){
+					$TradeURL[$i] = $TradeURL1_temp->CloudinaryResult["secure_url"];
+					$Trade_PublicID[$i] = $TradeURL1_temp->CloudinaryResult["public_id"];
+				}
+				else{
+					//uploading error;
+				}
+			
+			}			
+					
+			
+			$sqlconn = new MysqlConn();
+			$result = $sqlconn->AddPreMarketV2($_POST["MarketDate"], $OPG430Diff, $OPG1amDiff, $Remarks, $TradeURL, $Trade_PublicID);
+				    		
+		    	if ( $result == true ) {
+		    		header('Location: ViewPremarket.php?Message='.'Pre-Market Added Successfully.');
+
+		    	}
+		    	else{
+		    		header('Location: ViewPremarket.php?Message='.'Pre-Market Already Exists.');
  		
 		    	}
 		}
@@ -416,11 +518,11 @@ if ( ! empty( $_POST ) ) {
 		        $result = $sqlconn->AddLessonLearn($_POST["LessonLearnRemarks"]);
 		    		
 		    	if ( $result == true ) {
-		    		header('Location: NewLessonLearn.php?Message='.'Lesson Learn Added Successfully.');
+		    		header('Location: ViewLessonLearn.php?Message='.'Lesson Learn Added Successfully.');
 
 		    	}
 		    	else{
-		    		header('Location: NewLessonLearn.php?Message='.'Lesson Learn Already Exists.');
+		    		header('Location: ViewLessonLearn.php?Message='.'Lesson Learn Already Exists.');
  		
 		    	}
 		}
@@ -432,10 +534,10 @@ if ( ! empty( $_POST ) ) {
 		        $result = $sqlconn->ModifyLessonLearn($_POST['LessonLearnRemarks'], $_POST['LessonLearnID']);
 		    		
 		    	if ( $result == true ) {
-		    		header('Location: NewLessonLearn.php?Message='.'Lesson Learn Modified Successfully.');
+		    		header('Location: ViewLessonLearn.php?Message='.'Lesson Learn Modified Successfully.');
 		    	}
 		    	else{
-		    		header('Location: NewLessonLearn.php?Message='.'Lesson Learn Does Not Exists.');
+		    		header('Location: ViewLessonLearn.php?Message='.'Lesson Learn Does Not Exists.');
 		    	}
 		}
 
@@ -449,10 +551,10 @@ if ( ! empty( $_POST ) ) {
 		    		
 		    	// Verify user password and set $_SESSION
 		    	if ( $result == true ) {
-		    		header('Location: NewLessonLearn.php?Message='.'Lesson Learn Deleted Successfully.');
+		    		header('Location: ViewLessonLearn.php?Message='.'Lesson Learn Deleted Successfully.');
 		    	}
 		    	else{
-		    		header('Location: NewLessonLearn.php?Message='.'Delete Lesson Learn Fail.');
+		    		header('Location: ViewLessonLearn.php?Message='.'Delete Lesson Learn Fail.');
 		    	}
 		}
 
@@ -469,11 +571,11 @@ if ( ! empty( $_POST ) ) {
 		    		
 		    	// Verify user password and set $_SESSION
 		    	if ( $result == true ) {
-		    		header('Location: NewStrategy.php?Message='.'Strategy Added Successfully.');
+		    		header('Location: ViewStrategy.php?Message='.'Strategy Added Successfully.');
 
 		    	}
 		    	else{
-		    		header('Location: NewStrategy.php?Message='.'Strategy Already Exists.');
+		    		header('Location: ViewStrategy.php?Message='.'Strategy Already Exists.');
  		
 		    	}
 		}
@@ -486,10 +588,10 @@ if ( ! empty( $_POST ) ) {
 		    		
 		    	// Verify user password and set $_SESSION
 		    	if ( $result == true ) {
-		    		header('Location: NewStrategy.php?Message='.'Strategy Modified Successfully.');
+		    		header('Location: ViewStrategy.php?Message='.'Strategy Modified Successfully.');
 		    	}
 		    	else{
-		    		header('Location: NewStrategy.php?Message='.'Strategy Does Not Exists.');
+		    		header('Location: ViewStrategy.php?Message='.'Strategy Does Not Exists.');
 		    	}
 		}
 
@@ -503,10 +605,10 @@ if ( ! empty( $_POST ) ) {
 		    		
 		    	// Verify user password and set $_SESSION
 		    	if ( $result == true ) {
-		    		header('Location: NewStrategy.php?Message='.'Strategy Deleted Successfully.');
+		    		header('Location: ViewStrategy.php?Message='.'Strategy Deleted Successfully.');
 		    	}
 		    	else{
-		    		header('Location: NewStrategy.php?Message='.'Delete Strategy Fail.');
+		    		header('Location: ViewStrategy.php?Message='.'Delete Strategy Fail.');
 		    	}
 		}
 

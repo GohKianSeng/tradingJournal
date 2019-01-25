@@ -27,7 +27,7 @@
 								    
 								    	for ($i = 0; $i < count($result ); $i++) {
 							    			$obj = $result[$i];
-							    			echo $tradeResult ->StrategyName;
+							    			
 							    			if($obj->StrategyName == $tradeResult->StrategyName){
 							    				echo "<option value='".$obj->StrategyID."' selected>".$obj->StrategyName."</option>";
 							    			}
@@ -86,6 +86,7 @@
 					                      </div>			
 		
 							      <script type="text/javascript">
+						    	      	   $( document ).ready(function() {
 						    	        	$('#EntryDateTime').daterangepicker({
 						    	        		singleDatePicker: true,
 						    	        		singleClasses: "picker_3",
@@ -112,6 +113,18 @@
 						    	        	});
 						        		$('#ExitDateTime').val("");
 						        		$('#EntryDateTime').val("");
+						        								        		
+						        		$('form').on('submit', function() {
+									    	var $fileUpload = $("input[type='file']");
+									        if (parseInt($fileUpload.get(0).files.length)>10){
+									        	alert("You can only upload a maximum of 10 files");
+									        	
+									        	return false;
+									        }
+									        
+									        return true;
+									});
+						        	    });
 						    		</script>	
 					
 							      <div class="col-md-6 col-sm-6 col-xs-12 form-group">

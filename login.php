@@ -264,19 +264,9 @@ if (isset($_SESSION['UserGUID']) && $_SESSION['loggedin'] == true) {
                               	});
 		<?php
 			}
-			else{
+			
 		?>
-				new PNotify({
-                                  title:'Work In Progress',
-                                  text: 'Site is still under development. But basic functionality is available.',
-                                  type: 'info',
-                                  styling: 'bootstrap3',
-                                  addclass: 'dark'
-                              	});
-                <?php              	
-			}
-
-		?>		
+				
 	});	
 </script>
   

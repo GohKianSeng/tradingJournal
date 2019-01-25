@@ -991,3 +991,341 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/wefewfwe/public_html/ezyj.me/testpage.php on line 21
+[08-Dec-2018 13:19:22 CST6CDT] PHP Parse error:  syntax error, unexpected 'for' (T_FOR), expecting ',' or ';' in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 203
+[08-Dec-2018 13:19:23 CST6CDT] PHP Parse error:  syntax error, unexpected 'for' (T_FOR), expecting ',' or ';' in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 203
+[08-Dec-2018 13:22:57 CST6CDT] PHP Parse error:  syntax error, unexpected 'INTO' (T_STRING), expecting ',' or ';' in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 201
+[08-Dec-2018 13:22:58 CST6CDT] PHP Parse error:  syntax error, unexpected 'INTO' (T_STRING), expecting ',' or ';' in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 201
+[08-Dec-2018 13:32:54 CST6CDT] PHP Parse error:  syntax error, unexpected ';', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 204
+[08-Dec-2018 13:32:55 CST6CDT] PHP Parse error:  syntax error, unexpected ';', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 204
+[08-Dec-2018 13:33:44 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function __construct() in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:149
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(389): MysqlConn->AddPreMarketV2('2018-12-09', '333', '333', '333', Array, Array)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 149
+[08-Dec-2018 13:35:25 CST6CDT] PHP Parse error:  syntax error, unexpected '}' in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 12
+[08-Dec-2018 13:35:26 CST6CDT] PHP Parse error:  syntax error, unexpected '}' in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 12
+[08-Dec-2018 13:35:41 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function calledByConstructor() in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:11
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(388): MysqlConn->__construct()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 11
+[08-Dec-2018 13:35:41 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function calledByConstructor() in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:11
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(13): MysqlConn->__construct()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 11
+[08-Dec-2018 13:54:26 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:186
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(389): MysqlConn->AddPreMarketV2('2018-12-09', '333', '333', '333', Array, Array)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 186
+[08-Dec-2018 13:55:30 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:186
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(389): MysqlConn->AddPreMarketV2('2018-12-09', '333', '333', '333', Array, Array)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 186
+[08-Dec-2018 21:27:09 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:472
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ModifyPremarket.php(7): MysqlConn->GetSelectedPreMarket(149)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 472
+[09-Jan-2019 08:12:13 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:249
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(14): MysqlConn->GetAllTrades()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 249
+[09-Jan-2019 11:21:14 CST6CDT] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function MysqlConn::ModifyTrade(), 20 passed in /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php on line 136 and exactly 21 expected in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:38
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(136): MysqlConn->ModifyTrade('231', 'hsi', '1', 'Real', 'Buy', '1.00000', '2019-01-10 00:0...', '1.00000', '1', '1', '2019-01-10 00:0...', '1.00000', '1.00', '1fffff', NULL, NULL, NULL, NULL, NULL, NULL)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 38
+[09-Jan-2019 11:38:01 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:216
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php(46): MysqlConn->AddTrade('hsi', '3', 'Real', 'Sell', '1.00000', '2019-01-10 00:0...', '1.00000', '1', '1', '2019-01-10 00:0...', '1.00000', '1.00', '1efwwefwefwefwe...', NULL, NULL, NULL, NULL, NULL, NULL, '232', '57a97652b5854cf...')
+#1 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(136): MysqlConn->ModifyTrade('232', 'hsi', '3', 'Real', 'Sell', '1.00000', '2019-01-10 00:0...', '1.00000', '1', '1', '2019-01-10 00:0...', '1.00000', '1.00', '1efwwefwefwefwe...', NULL, NULL, NULL, NULL, NULL, NULL, '57a97652b5854cf...')
+#2 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 216
+[11-Jan-2019 08:56:04 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function url() in /home/wefewfwe/public_html/ezyj.me/ViewPremarket.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/ViewPremarket.php on line 28
+[11-Jan-2019 08:56:16 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function url() in /home/wefewfwe/public_html/ezyj.me/ViewPremarket.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/ViewPremarket.php on line 28
+[11-Jan-2019 08:56:18 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function url() in /home/wefewfwe/public_html/ezyj.me/ViewPremarket.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/ViewPremarket.php on line 28
+[11-Jan-2019 08:56:20 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function url() in /home/wefewfwe/public_html/ezyj.me/ViewPremarket.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/ViewPremarket.php on line 28
+[11-Jan-2019 09:40:05 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:420
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(435): MysqlConn->AddPreMarketV2('2019-01-31', '111', '111', '111', Array, Array)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 420
+[11-Jan-2019 09:45:53 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:442
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(435): MysqlConn->AddPreMarketV2('2019-01-31', 4444, 444, '4444', Array, Array)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 442
+[11-Jan-2019 09:47:42 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:442
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(435): MysqlConn->AddPreMarketV2('2019-01-31', 4444, 444, '4444', Array, Array)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 442
+[11-Jan-2019 09:48:28 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:442
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(435): MysqlConn->AddPreMarketV2('2019-01-31', 666, 666, '6666', Array, Array)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 442
+[11-Jan-2019 10:00:10 CST6CDT] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function MysqlConn::ModifyPreMarket(), 9 passed in /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php on line 379 and exactly 10 expected in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:464
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/PerformTransaction.php(379): MysqlConn->ModifyPreMarket('165', '2019-01-31', '333', '33', '3333ffffff', NULL, NULL, NULL, NULL)
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 464
+[12-Jan-2019 12:03:50 CST6CDT] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC), expecting end of file in /home/wefewfwe/public_html/ezyj.me/testUpload.php on line 3
+[12-Jan-2019 12:04:14 CST6CDT] PHP Parse error:  syntax error, unexpected '=' in /home/wefewfwe/public_html/ezyj.me/testUpload.php on line 4
+[12-Jan-2019 12:04:15 CST6CDT] PHP Parse error:  syntax error, unexpected '=' in /home/wefewfwe/public_html/ezyj.me/testUpload.php on line 4
+[12-Jan-2019 12:16:59 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::next_result() in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:30
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/testUpload.php(6): MysqlConn->testSP()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 30
+[12-Jan-2019 13:18:32 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function store_result() on null in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:28
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/testUpload.php(6): MysqlConn->testSP()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 28
+[12-Jan-2019 13:18:33 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function store_result() on null in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:28
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/testUpload.php(6): MysqlConn->testSP()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 28
+[12-Jan-2019 13:18:48 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function more_results() on null in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:35
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/testUpload.php(6): MysqlConn->testSP()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 35
+[12-Jan-2019 13:18:49 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function more_results() on null in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:35
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/testUpload.php(6): MysqlConn->testSP()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 35
+[12-Jan-2019 13:18:50 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function more_results() on null in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:35
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/testUpload.php(6): MysqlConn->testSP()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 35
+[12-Jan-2019 13:18:51 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function more_results() on null in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:35
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/testUpload.php(6): MysqlConn->testSP()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 35
+[12-Jan-2019 13:18:51 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function more_results() on null in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:35
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/testUpload.php(6): MysqlConn->testSP()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 35
+[12-Jan-2019 13:18:51 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function more_results() on null in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:35
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/testUpload.php(6): MysqlConn->testSP()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 35
+[12-Jan-2019 13:19:08 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function next_result() on null in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:38
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/testUpload.php(6): MysqlConn->testSP()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 38
+[15-Jan-2019 11:42:59 CST6CDT] PHP Parse error:  syntax error, unexpected '}', expecting while (T_WHILE) in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 81
+[15-Jan-2019 11:43:20 CST6CDT] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 1219
+[15-Jan-2019 11:43:21 CST6CDT] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 1219
+[15-Jan-2019 11:43:41 CST6CDT] PHP Fatal error:  Only variables can be passed by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 34
+[15-Jan-2019 11:43:42 CST6CDT] PHP Fatal error:  Only variables can be passed by reference in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 34
+[15-Jan-2019 11:44:08 CST6CDT] PHP Fatal error:  Uncaught Error: Class 'GraphDateValue' not found in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:31
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/testUpload.php(6): MysqlConn->testSP()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 31
+[15-Jan-2019 11:44:09 CST6CDT] PHP Fatal error:  Uncaught Error: Class 'GraphDateValue' not found in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:31
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/testUpload.php(6): MysqlConn->testSP()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 31
+[15-Jan-2019 12:01:27 CST6CDT] PHP Fatal error:  Uncaught Error: Class 'GraphResult' not found in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:27
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/testUpload.php(6): MysqlConn->testSP()
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 27
+[15-Jan-2019 12:23:59 CST6CDT] PHP Fatal error:  Cannot declare class MysqlConn, because the name is already in use in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 5
+[18-Jan-2019 10:47:54 CST6CDT] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/wefewfwe/public_html/ezyj.me/config/AllClasses.php on line 12
+[18-Jan-2019 22:28:49 CST6CDT] PHP Fatal error:  Cannot redeclare GraphResult::$LessonLearnStats in /home/wefewfwe/public_html/ezyj.me/config/AllClasses.php on line 12
+[19-Jan-2019 12:16:44 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:388
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(24): MysqlConn->GetAllLessonLearnTrades('2019-01-01', '2019-01-31', '1')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 388
+[19-Jan-2019 12:16:45 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:388
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(24): MysqlConn->GetAllLessonLearnTrades('2018-11-01', '2018-11-30', '1')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 388
+[19-Jan-2019 12:16:47 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:388
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(24): MysqlConn->GetAllLessonLearnTrades('2018-11-01', '2018-11-30', '1')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 388
+[19-Jan-2019 12:16:48 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:388
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(24): MysqlConn->GetAllLessonLearnTrades('2018-11-01', '2018-11-30', '1')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 388
+[19-Jan-2019 12:16:49 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:388
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(24): MysqlConn->GetAllLessonLearnTrades('2018-11-01', '2018-11-30', '1')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 388
+[19-Jan-2019 12:18:27 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:388
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(24): MysqlConn->GetAllLessonLearnTrades('2018-11-01', '2018-11-30', '1')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 388
+[19-Jan-2019 12:18:28 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:388
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(24): MysqlConn->GetAllLessonLearnTrades('2018-11-01', '2018-11-30', '1')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 388
+[19-Jan-2019 12:18:29 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:388
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(24): MysqlConn->GetAllLessonLearnTrades('2018-11-01', '2018-11-30', '1')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 388
+[19-Jan-2019 12:19:32 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:388
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(24): MysqlConn->GetAllLessonLearnTrades('2018-11-01', '2018-11-30', '1')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 388
+[19-Jan-2019 12:19:35 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:388
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(24): MysqlConn->GetAllLessonLearnTrades('2018-11-01', '2018-11-30', '1')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 388
+[19-Jan-2019 12:19:35 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:388
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(24): MysqlConn->GetAllLessonLearnTrades('2018-11-01', '2018-11-30', '1')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 388
+[19-Jan-2019 12:19:36 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:388
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(24): MysqlConn->GetAllLessonLearnTrades('2018-11-01', '2018-11-30', '1')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 388
+[19-Jan-2019 12:19:36 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:388
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(24): MysqlConn->GetAllLessonLearnTrades('2018-11-01', '2018-11-30', '1')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 388
+[19-Jan-2019 12:19:36 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:388
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(24): MysqlConn->GetAllLessonLearnTrades('2018-11-01', '2018-11-30', '1')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 388
+[19-Jan-2019 12:19:37 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:388
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(24): MysqlConn->GetAllLessonLearnTrades('2018-11-01', '2018-11-30', '1')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 388
+[19-Jan-2019 12:20:25 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:388
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(24): MysqlConn->GetAllLessonLearnTrades('2018-11-01', '2018-11-30', '1')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 388
+[19-Jan-2019 12:20:27 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:388
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(24): MysqlConn->GetAllLessonLearnTrades('2018-11-01', '2018-11-30', '1')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 388
+[19-Jan-2019 12:22:07 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:388
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(24): MysqlConn->GetAllLessonLearnTrades('2018-11-01', '2018-11-30', '1')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 388
+[19-Jan-2019 12:22:44 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:388
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(24): MysqlConn->GetAllLessonLearnTrades('2018-11-01', '2018-11-30', '1')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 388
+[19-Jan-2019 12:47:10 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:396
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(27): MysqlConn->GetAllStrategyTrades('2019-01-01', '2019-01-31', '16', 'Profit')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 396
+[19-Jan-2019 12:48:15 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:396
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(27): MysqlConn->GetAllStrategyTrades('2019-01-01', '2019-01-31', '16', 'Profit')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 396
+[19-Jan-2019 12:48:16 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:396
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(27): MysqlConn->GetAllStrategyTrades('2019-01-01', '2019-01-31', '16', 'Profit')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 396
+[19-Jan-2019 12:48:17 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:396
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(27): MysqlConn->GetAllStrategyTrades('2019-01-01', '2019-01-31', '16', 'Profit')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 396
+[19-Jan-2019 12:48:17 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:396
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(27): MysqlConn->GetAllStrategyTrades('2019-01-01', '2019-01-31', '16', 'Profit')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 396
+[19-Jan-2019 12:48:17 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:396
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(27): MysqlConn->GetAllStrategyTrades('2019-01-01', '2019-01-31', '16', 'Profit')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 396
+[19-Jan-2019 12:48:18 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:396
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(27): MysqlConn->GetAllStrategyTrades('2019-01-01', '2019-01-31', '16', 'Profit')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 396
+[19-Jan-2019 12:48:18 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:396
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(27): MysqlConn->GetAllStrategyTrades('2019-01-01', '2019-01-31', '16', 'Profit')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 396
+[19-Jan-2019 12:49:46 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:394
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(27): MysqlConn->GetAllStrategyTrades('2018-12-01', '2018-12-31', '1', 'Profit')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 394
+[19-Jan-2019 12:50:51 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:394
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(27): MysqlConn->GetAllStrategyTrades('2018-12-01', '2018-12-31', '1', 'Profit')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 394
+[19-Jan-2019 13:10:40 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:458
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(24): MysqlConn->GetAllLessonLearnTrades('2019-01-01', '2019-01-31', '4')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 458
+[19-Jan-2019 13:10:59 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:458
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(24): MysqlConn->GetAllLessonLearnTrades('2019-01-01', '2019-01-31', '1')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 458
+[19-Jan-2019 13:12:53 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php:458
+Stack trace:
+#0 /home/wefewfwe/public_html/ezyj.me/ViewTrades.php(24): MysqlConn->GetAllLessonLearnTrades('2019-01-01', '2019-01-31', '4')
+#1 {main}
+  thrown in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 458
+[23-Jan-2019 09:05:22 CST6CDT] PHP Fatal error:  Cannot declare class MysqlConn, because the name is already in use in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 5
+[23-Jan-2019 09:05:24 CST6CDT] PHP Fatal error:  Cannot declare class MysqlConn, because the name is already in use in /home/wefewfwe/public_html/ezyj.me/config/MysqlConn.php on line 5
+[23-Jan-2019 09:10:45 CST6CDT] PHP Parse error:  syntax error, unexpected 'row' (T_STRING), expecting ',' or ';' in /home/wefewfwe/public_html/ezyj.me/ViewLessonLearn.php on line 32
+[23-Jan-2019 09:11:59 CST6CDT] PHP Parse error:  syntax error, unexpected '"</th>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/wefewfwe/public_html/ezyj.me/ViewLessonLearn.php on line 33
+[23-Jan-2019 09:13:14 CST6CDT] PHP Parse error:  syntax error, unexpected '"</th>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/wefewfwe/public_html/ezyj.me/ViewLessonLearn.php on line 33
+[23-Jan-2019 09:13:44 CST6CDT] PHP Parse error:  syntax error, unexpected '"</th>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/wefewfwe/public_html/ezyj.me/ViewLessonLearn.php on line 33
+[23-Jan-2019 09:17:19 CST6CDT] PHP Parse error:  syntax error, unexpected 'fa' (T_STRING), expecting ',' or ';' in /home/wefewfwe/public_html/ezyj.me/ViewLessonLearn.php on line 36

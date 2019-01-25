@@ -3,13 +3,7 @@
 include './config/MysqlConn.php';
 
 session_start();
-if (isset($_SESSION['UserGUID']) && $_SESSION['loggedin'] == true) {
-    
-    
-} else {
-    header('Location: login_page.php');
-    exit;
-}
+
 ?>
 
 <!DOCTYPE html>
@@ -131,43 +125,13 @@ if (isset($_SESSION['UserGUID']) && $_SESSION['loggedin'] == true) {
             <div class="clearfix"></div>
 
             <!-- menu profile quick info -->
-            <div class="profile clearfix">
-              <div class="profile_pic">
-                
-              </div>
-              <div class="profile_info">
-                <span>Welcome,</span>
-                <h2><?php echo $_SESSION['name'] ?></h2>
-              </div>
-            </div>
+            
             <!-- /menu profile quick info -->
 
             <br />
 
             <!-- sidebar menu -->
-            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-              <div class="menu_section">
-                
-                <ul class="nav side-menu">
-                		<h3>Summary</h3>
-                		<li><a href="Dashboard.php"><i class="fa fa-dashboard"></i>Dashboard</a></li>
-                		<h3>Pre-Market</h3>
-                		   <li><a href="ViewPremarket.php"><i class="fa fa-globe"></i>View All Pre-Market</a></li>
-                		   <li><a href="NewPremarket.php"><i class="fa fa-newspaper-o"></i>Add Pre-Market</a></li>
-				<h3>Trades</h3>				  
-				  <li><a href="ViewTrades.php"><i class="fa fa-exchange"></i>View All Trades</a></li>
-				  <li><a href="NewTradeV2.php"><i class="fa fa-gbp"></i> Add New Trade</a></li>
-				  <br />
-                		<h3>Trade Dictionary</h3>
-				  <li><a href="ViewStrategy.php"><i class="fa fa-cubes"></i>View Strategies</a></li>
-				  <li><a href="NewStrategy.php"><i class="fa fa-cube"></i>Add Strategies</a></li>
-				  <li><a href="ViewLessonLearn.php"><i class="fa fa-files-o"></i>View Lesson Learn</a></li>
-				  <li><a href="NewLessonLearn.php"><i class="fa fa-file-o"></i>Add Lesson Learn</a></li>  
-				                 
-                </ul>
-              </div>
-
-            </div>
+            
             <!-- /sidebar menu -->
           </div>
         </div>
@@ -177,21 +141,10 @@ if (isset($_SESSION['UserGUID']) && $_SESSION['loggedin'] == true) {
           <div class="nav_menu">
             <nav>
               <div class="nav toggle">
-                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                <a id="menu_toggle"><i class="fa fa-bars" style="margin-bottom: 10px;"></i></a>
               </div>
 
-              <ul class="nav navbar-nav navbar-right">
-                <li class="">
-                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <?php echo $_SESSION['name'] ?>
-                    <span class=" fa fa-angle-down"></span>
-                  </a>
-                  <ul class="dropdown-menu dropdown-usermenu pull-right">
-                    <li><a href="javascript:;"> Change Password</a></li>                  
-                    <li><a href="logout.php"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
-                  </ul>
-                </li>
-              </ul>
+              
             </nav>
           </div>
         </div>

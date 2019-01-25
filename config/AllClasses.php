@@ -1,4 +1,38 @@
 <?php
+
+class GraphResult {
+	public $MinDate;
+	public $MaxDate;
+	public $IncrementalGross;
+	public $DailyGross;
+	public $ProfitTrade;
+	public $LossTrade;
+	public $MissedTrade;
+	public $LessonLearnStats;
+	public $ProfitStrategy;
+	public $LoseStrategy;
+}
+
+class StatsDateRange {
+	public $StatsDate;
+	public $StatsDateName;
+}
+
+class StrategyStats {
+	public $Strategy;
+	public $Total;
+}
+
+class LessonLearnStats {
+	public $LessonLearn;
+	public $Total;
+}
+
+class GraphDateValue {
+	public $Date;
+	public $Value;
+}
+
 class Strategy {
 	public $StrategyName;
 	public $StrategyID;
@@ -38,6 +72,7 @@ class Trade{
 	public $LessonLearn;
 	public $TradeURL = array();
 	public $Trade_PublicID = array();
+	public $PublicGUID;
 }
 
 class PreMarket{
@@ -50,7 +85,9 @@ class PreMarket{
 	public $MySR_PublicID;
 	public $RaymondSR_URL;
 	public $RaymondSR_PublicID;
-	
+	public $PublicGUID;
+	public $TradeURL = array();
+	public $Trade_PublicID = array();	
 }
 
 ?>
