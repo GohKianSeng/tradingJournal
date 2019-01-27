@@ -13,10 +13,10 @@ class MysqlConn {
 	
 	function calledByConstructor(){
 	    $this->conn= NULL;
-	    $this->conn= new mysqli('localhost', 'wefewfwe_KS', 'yWqikr1981', 'wefewfwe_tradingjournal');
+	    $this->conn= new mysqli('37.60.254.185', 'wefewfwe_KS', 'yWqikr1981', 'wefewfwe_iamtestonly_tradingjournal');
 	    
 	    $this->conn2= NULL;
-	    $this->conn2= new mysqli('localhost', 'wefewfwe_KS', 'yWqikr1981', 'wefewfwe_tradingjournal');
+	    $this->conn2= new mysqli('37.60.254.185', 'wefewfwe_KS', 'yWqikr1981', 'wefewfwe_iamtestonly_tradingjournal');
 	}		    
 	
 	function GetStatsDateRange()  {
@@ -1131,7 +1131,7 @@ class MysqlConn {
 	}
 
 	
-	function GetAllStrategy()  {
+	/*function GetAllStrategy()  {
 	    $stmt = $this->conn->prepare("SELECT StrategyID, StrategyName FROM tb_Strategy WHERE UserGUID = ?");
 	    $stmt->bind_param('i', $_SESSION['UserGUID']);
 	    $stmt->execute();	     		 
@@ -1146,6 +1146,51 @@ class MysqlConn {
        	    }
        	    
        	    return $array;	
+	}*/
+	
+	function GetAllStrategy()  {
+	    $stmt = $this->conn->prepare("SELECT StrategyID, StrategyName, TradeType, LotSize, SUBSTRING(EntryTime, 1, 5) AS EntryTime, SUBSTRING(ExitTime, 1, 5) AS ExitTime, SL_Pips, TP_Pips FROM tb_Strategy WHERE UserGUID = ?");
+	    $stmt->bind_param('i', $_SESSION['UserGUID']);
+	    $stmt->execute();	     		 
+	    $stmt->bind_result($StrategyID, $StrategyName, $TradeType, $LotSize, $EntryTime, $ExitTime, $SL_Pips, $TP_Pips);
+	    
+		$array = array();
+	    while ($stmt->fetch()) {
+	    	$temp_strategy = new Strategy();
+	    	$temp_strategy->StrategyName = $StrategyName;
+			$temp_strategy->TradeType = $TradeType;
+			$temp_strategy->LotSize = $LotSize;
+			$temp_strategy->EntryTime = $EntryTime;
+			$temp_strategy->ExitTime = $ExitTime;
+			$temp_strategy->SL_Pips = $SL_Pips;
+			$temp_strategy->TP_Pips = $TP_Pips;
+			$temp_strategy->StrategyID= $StrategyID;
+			array_push($array , $temp_strategy);
+       	}
+       	
+       	return $array;	
+	}
+	
+	function GetSelectedStrategy($ID)  {
+	    $stmt = $this->conn->prepare("SELECT StrategyID, StrategyName, TradeType, LotSize, SUBSTRING(EntryTime, 1, 5) AS EntryTime, SUBSTRING(ExitTime, 1, 5) AS ExitTime, SL_Pips, TP_Pips FROM tb_Strategy WHERE UserGUID = ? AND StrategyID = ?");
+	    $stmt->bind_param('ii', $_SESSION['UserGUID'], $ID);
+	    $stmt->execute();	     		 
+	    $stmt->bind_result($StrategyID, $StrategyName, $TradeType, $LotSize, $EntryTime, $ExitTime, $SL_Pips, $TP_Pips);
+	    
+	    while ($stmt->fetch()) {
+	    	$temp_strategy = new Strategy();
+	    	$temp_strategy->StrategyName = $StrategyName;
+			$temp_strategy->TradeType = $TradeType;
+			$temp_strategy->LotSize = $LotSize;
+			$temp_strategy->EntryTime = $EntryTime;
+			$temp_strategy->ExitTime = $ExitTime;
+			$temp_strategy->SL_Pips = $SL_Pips;
+			$temp_strategy->TP_Pips = $TP_Pips;
+			
+			$temp_strategy->StrategyID= $StrategyID;					
+       	}
+       	    
+       	return $temp_strategy;	
 	}
 
 	function DeleteStrategy($StrategyName, $old_StrategyID)  {
@@ -1199,16 +1244,58 @@ class MysqlConn {
 	    	return false;
 	    }
 	    else{	    	
-	    	$stmt = $this->conn->prepare("UPDATE tb_Strategy SET StrategyName = ? WHERE UserGUID = ? AND StrategyID = ?");	    		 	      	
-	    	$stmt->bind_param('sii', $StrategyName, $_SESSION['UserGUID'], $old_StrategyID);
+			
+			if ( isset($_POST["EntryDateTime"]) && strlen($_POST["EntryDateTime"]) > 0) {
+				$entryTime = $_POST["EntryDateTime"] . ":00";
+			
+			}
+			else{
+				$entryTime = null;
+			}
+			
+			if ( isset($_POST["ExitDateTime"]) && strlen($_POST["ExitDateTime"]) > 0 ) {
+				$exitTime = $_POST["ExitDateTime"] . ":00";
+			
+			}
+			else{
+				$exitTime = null;
+			}
+			
+			if ( isset($_POST["LotSize"]) && strlen($_POST["LotSize"]) > 0 ) {
+				$lotSize = $_POST["LotSize"];
+			
+			}
+			else{
+				$lotSize = null;
+			}
+			
+			if ( isset($_POST["SL_Pips"]) && strlen($_POST["SL_Pips"]) > 0 ) {
+				$SL_Pips = $_POST["SL_Pips"];
+			
+			}
+			else{
+				$SL_Pips = null;
+			}
+			
+			if ( isset($_POST["TP_Pips"]) && strlen($_POST["TP_Pips"]) > 0 ) {
+				$TP_Pips = $_POST["TP_Pips"];
+			
+			}
+			else{
+				$TP_Pips = null;
+			}
+			
+			
+	    	$stmt = $this->conn->prepare("UPDATE tb_Strategy SET StrategyName = ?, TradeType = ?, LotSize = ?, EntryTime = ?, ExitTime = ?, SL_Pips = ?, TP_Pips = ? WHERE UserGUID = ? AND StrategyID = ?");	    		 	      	
+	    	$stmt->bind_param('ssissiiii', $StrategyName, $_POST["TradeType"], $lotSize, $entryTime, $exitTime, $SL_Pips, $TP_Pips, $_SESSION['UserGUID'], $old_StrategyID);
 	    	$status = $stmt->execute();		    		    	   	
 	    	$stmt->close();
 	    	    	
 	    	$stmt = $this->conn->prepare("SELECT StrategyID FROM tb_Strategy WHERE UserGUID = ? AND StrategyName = ? AND StrategyID = ?");
-		$stmt->bind_param('isi', $_SESSION['UserGUID'], $StrategyName, $old_StrategyID);
-		$stmt->execute();
-		$stmt->bind_result($StrategyID);
-		$stmt->fetch();			    
+			$stmt->bind_param('isi', $_SESSION['UserGUID'], $StrategyName, $old_StrategyID);
+			$stmt->execute();
+			$stmt->bind_result($StrategyID);
+			$stmt->fetch();			    
 	        $stmt->close();
 	        
 	        if ( isset($StrategyID) ) {
@@ -1234,17 +1321,56 @@ class MysqlConn {
 	    	return false;
 	    }
 	    else{
-	    	
-	    	$stmt = $this->conn->prepare("INSERT INTO tb_Strategy (UserGUID, StrategyName) VALUES(?, ?)");	    	
-	    	$stmt->bind_param('is', $_SESSION['UserGUID'], $StrategyName);
+	    	if ( isset($_POST["EntryDateTime"]) && strlen($_POST["EntryDateTime"]) > 0) {
+				$entryTime = $_POST["EntryDateTime"] . ":00";
+			
+			}
+			else{
+				$entryTime = null;
+			}
+			
+			if ( isset($_POST["ExitDateTime"]) && strlen($_POST["ExitDateTime"]) > 0 ) {
+				$exitTime = $_POST["ExitDateTime"] . ":00";
+			
+			}
+			else{
+				$exitTime = null;
+			}
+			
+			if ( isset($_POST["LotSize"]) && strlen($_POST["LotSize"]) > 0 ) {
+				$lotSize = $_POST["LotSize"];
+			
+			}
+			else{
+				$lotSize = null;
+			}
+			
+			if ( isset($_POST["SL_Pips"]) && strlen($_POST["SL_Pips"]) > 0 ) {
+				$SL_Pips = $_POST["SL_Pips"];
+			
+			}
+			else{
+				$SL_Pips = null;
+			}
+			
+			if ( isset($_POST["TP_Pips"]) && strlen($_POST["TP_Pips"]) > 0 ) {
+				$TP_Pips = $_POST["TP_Pips"];
+			
+			}
+			else{
+				$TP_Pips = null;
+			}
+			
+			$stmt = $this->conn->prepare("INSERT INTO tb_Strategy (UserGUID, StrategyName, TradeType, LotSize, EntryTime, ExitTime, SL_Pips, TP_Pips) VALUES(?, ?, ?, ?, ?, ?, ?, ?)");	    	
+	    	$stmt->bind_param('ississii', $_SESSION['UserGUID'], $StrategyName, $_POST["TradeType"], $lotSize, $entryTime, $exitTime, $SL_Pips, $TP_Pips);
 	    	$stmt->execute();		    		    	
 	    	$stmt->close();
 	    	    	
 	    	$stmt = $this->conn->prepare("SELECT StrategyID FROM tb_Strategy WHERE UserGUID = ? AND StrategyName = ?");
-		$stmt->bind_param('is', $_SESSION['UserGUID'], $StrategyName);
-		$stmt->execute();
-		$stmt->bind_result($StrategyID);
-		$stmt->fetch();			    
+			$stmt->bind_param('is', $_SESSION['UserGUID'], $StrategyName);
+			$stmt->execute();
+			$stmt->bind_result($StrategyID);
+			$stmt->fetch();			    
 	        $stmt->close();
 	        
 	        if ( isset($StrategyID) ) {

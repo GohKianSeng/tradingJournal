@@ -36,6 +36,12 @@ class GraphDateValue {
 class Strategy {
 	public $StrategyName;
 	public $StrategyID;
+	public $TradeType;
+	public $LotSize; 
+	public $EntryTime; 
+	public $ExitTime; 
+	public $SL_Pips; 
+	public $TP_Pips;
 }
 
 class User{

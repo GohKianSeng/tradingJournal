@@ -45,7 +45,7 @@ class SendEmail{
 		    $mail->Subject = 'EzyJ.me - Email Verification';
 		    $mail->Body    = '<html>
 Hi '.$Name.', <br /><br />
-Please verify your email address by clicking the link below: <a href="https://ezyj.me/verify_email.php?token='.$Token.'">https://ezyj.me/verify_email.php?token='.$Token.'</a>.
+Please verify your email address by clicking the link below: <a href="https://'.$_SERVER['SERVER_NAME'].'/verify_email.php?token='.$Token.'">https://'.$_SERVER['SERVER_NAME'].'/verify_email.php?token='.$Token.'</a>.
 If the above URL does not work try copying and pasting it into your browser. 
 <br /><br />Thank you, <br />The EzyJ.me Team
 </html>';
@@ -72,7 +72,7 @@ If the above URL does not work try copying and pasting it into your browser.
 		    $mail->Subject = 'EzyJ.me - Password Reset';
 		    $mail->Body    = '<html>
 Hi '.$Name.', <br /><br />
-Please click on the link below to reset your password: <a href="https://ezyj.me/reset_password.php?token='.$Token.'">https://ezyj.me/reset_password.php?token='.$Token.'</a>.
+Please click on the link below to reset your password: <a href="https://'.$_SERVER['SERVER_NAME'].'/reset_password.php?token='.$Token.'">https://'.$_SERVER['SERVER_NAME'].'/reset_password.php?token='.$Token.'</a>.
 If the above URL does not work try copying and pasting it into your browser. 
 <br /><br />Thank you, <br />The EzyJ.me Team
 </html>';

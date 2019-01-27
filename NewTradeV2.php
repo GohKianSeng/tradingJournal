@@ -23,19 +23,13 @@
 					                            <option value="">Strategy??</option>
 					                            <?php
 								    	$sqlconn = new MysqlConn();
-									$result = $sqlconn->GetAllStrategy();
+										$strategyResult = $sqlconn->GetAllStrategy();
 								    
-								    	for ($i = 0; $i < count($result ); $i++) {
-							    			$obj = $result[$i];
+								    	for ($i = 0; $i < count($strategyResult ); $i++) {
+							    			$obj = $strategyResult[$i];
 							    			
-							    			if($obj->StrategyName == $tradeResult->StrategyName){
-							    				echo "<option value='".$obj->StrategyID."' selected>".$obj->StrategyName."</option>";
-							    			}
-							    			else
-							    			{
-							    				echo "<option value='".$obj->StrategyID."'>".$obj->StrategyName."</option>";
+							    			echo "<option value='".$obj->StrategyID."'>".$obj->StrategyName."</option>";
 							
-							    			}
 							    		}
 								    ?>
 					                          </select>
@@ -86,10 +80,99 @@
 					                      </div>			
 		
 							      <script type="text/javascript">
-						    	      	   $( document ).ready(function() {
+						    	      	   
+										   var dictStrategy = {};
+										   <?php
+										   for ($i = 0; $i < count($strategyResult ); $i++) {
+												$obj = $strategyResult[$i];
+												echo "var tempStrategy = {
+														  LotSize: '".$obj->LotSize."',
+														  EntryTime: '".$obj->EntryTime."',
+														  ExitTime: '".$obj->ExitTime."',
+														  TradeType: '".$obj->TradeType."',
+														  SL_Pips: '".$obj->SL_Pips."',
+														  TP_Pips: '".$obj->TP_Pips."',
+														};
+														
+														dictStrategy['".$obj->StrategyID."'] = tempStrategy;
+														"
+														
+														
+														
+														
+														
+														;
+							    			
+											}
+										    ?>
+										   
+										   $( document ).ready(function() {
+											   
+											$("#StrategyID").change(function () {
+												
+												tempStrategy = dictStrategy[$("#StrategyID").val()];
+												if(tempStrategy.LotSize != null && tempStrategy.LotSize.length > 0){
+													$("#LotSize").val(tempStrategy.LotSize);
+												}
+												
+												if(tempStrategy.EntryTime != null && tempStrategy.EntryTime.length > 0){
+													var d = new Date();
+													var strDate = d.getFullYear();
+													if((d.getMonth()+1).toString().length == 1){
+														strDate = strDate + "-0" + (d.getMonth()+1);
+													}														
+													else{
+														strDate = strDate + "-" + (d.getMonth()+1);
+													}
+													
+													if((d.getDate()).toString().length == 1){
+														strDate = strDate + "-0" + (d.getDate());
+													}														
+													else{
+														strDate = strDate + "-" + (d.getDate());
+													}
+													
+													$('#EntryDateTime').data('daterangepicker').setStartDate(strDate + " " + tempStrategy.EntryTime);													
+												}
+												
+												
+												if(tempStrategy.ExitTime != null && tempStrategy.ExitTime.length > 0){
+													var d = new Date();
+													var strDate = d.getFullYear();
+													if((d.getMonth()+1).toString().length == 1){
+														strDate = strDate + "-0" + (d.getMonth()+1);
+													}														
+													else{
+														strDate = strDate + "-" + (d.getMonth()+1);
+													}
+													
+													if((d.getDate()).toString().length == 1){
+														strDate = strDate + "-0" + (d.getDate());
+													}														
+													else{
+														strDate = strDate + "-" + (d.getDate());
+													}
+													
+													$('#ExitDateTime').data('daterangepicker').setStartDate(strDate + " " + tempStrategy.ExitTime);													
+												}
+												
+												
+												if(tempStrategy.TradeType != null && tempStrategy.TradeType.length > 0){
+													$("#TradeType").val(tempStrategy.TradeType);
+												}
+												
+												if(tempStrategy.SL_Pips != null && tempStrategy.SL_Pips.length > 0){
+													$("#SL_Pips").val(tempStrategy.SL_Pips);
+												}
+												
+												if(tempStrategy.TP_Pips != null && tempStrategy.TP_Pips.length > 0){
+													$("#TP_Pips").val(tempStrategy.TP_Pips);
+												}
+												
+											});   
+											   
 						    	        	$('#EntryDateTime').daterangepicker({
 						    	        		singleDatePicker: true,
-						    	        		singleClasses: "picker_3",
 						    	        		timePicker24Hour: true,
 						    	        		timePicker: true,
 										timePickerIncrement: 1,

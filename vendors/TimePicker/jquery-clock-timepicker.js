@@ -57,7 +57,8 @@
 			separator: ':',
 			useAmPm: false, //NOT YET IMPLEMENTED
 			useDurationPlusSign: false,
-			vibrate: true
+			vibrate: true,
+			OtherOnClickShow : ''
 		}, typeof options == 'object' ? options : {});
 		
 		
@@ -147,7 +148,7 @@
 			/************************************************************************************************
 			  INITIALIZE A NEW PARENT ELEMENT THAT ENCAPSULATES THE INPUT FIELD
 			 ************************************************************************************************/
-			element.wrap('<div class="clock-timepicker" style="display:inline-block; position:relative">');
+			element.wrap('<div class="clock-timepicker" style="position:relative">');
 			
 			
 			
@@ -256,7 +257,7 @@
 			 ************************************************************************************************/
 			if (!isMobile()) {
 				function onWindowClick(event) {
-					if (popup.css('display') != 'none' && !($(event.target)[0] == inputElement[0] || $.contains(inputElement.parent()[0], $(event.target)[0]))) {
+					if (popup.css('display') != 'none' && !($(event.target)[0] == inputElement[0] || ($(event.target)[0].id == settings.OtherOnClickShow && settings.OtherOnClickShow.length > 0) || $.contains(inputElement.parent()[0], $(event.target)[0]))) {
 						hideTimePicker();
 					}
 				}
@@ -298,6 +299,11 @@
 			inputElement.on('mousedown.clockTimePicker', onInputElementMouseDown);
 			inputElement.on('keyup.clockTimePicker', onInputElementKeyUp);
 			inputElement.on('keydown.clockTimePicker', onInputElementKeyDown);
+			if(settings.OtherOnClickShow.length > 0){
+				otherElementOnClick = $('#'+settings.OtherOnClickShow);
+				otherElementOnClick.on('mousedown.clockTimePicker', onInputElementMouseDown);
+			}
+			
 			element.on('mousewheel.clockTimePicker', onInputElementMouseWheel);
 			element.on('focus.clockTimePicker', onInputElementFocus);
 			

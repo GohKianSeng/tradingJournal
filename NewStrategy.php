@@ -30,7 +30,7 @@
 							  
 							  
 							  
-							  <div class="form-group" style="padding-top: 100px;Display:none">
+							  <div class="form-group" style="padding-top: 100px;Display:block">
 					                        <div class="col-md-12 col-sm-12 col-xs-12">
 					                          <div class="x_title">
 									<h4>Predefined Value on Add New Trade<small> (below fields are not mandatory)</small></h4>
@@ -45,8 +45,8 @@
 					                          <div class='input-group date'>
 						                       <input type='text' autocomplete='off' name='EntryDateTime' id='EntryDateTime' class="form-control" placeholder="Entry Time" />
 						                       <span class="input-group-addon">
-						                       <span class="glyphicon glyphicon-calendar"></span>
-						                       </span>
+						                       <span id="extraClockClick1" class="glyphicon glyphicon-time"></span>
+						                       </span>						                      
 						                  </div>	
 					                      </div>
 					                      
@@ -54,10 +54,20 @@
 					                          <div class='input-group date'>
 						                       <input type='text' autocomplete='off' name='ExitDateTime' id='ExitDateTime' class="form-control" placeholder="Exit Time" />
 						                       <span class="input-group-addon">
-						                       <span class="glyphicon glyphicon-calendar"></span>
+						                       <span id="extraClockClick2" class="glyphicon glyphicon-time"></span>
 						                       </span>
 						                  </div>	
 					                      </div>
+					                      
+					                      <script>
+									        $('#EntryDateTime').clockTimePicker({
+												OtherOnClickShow : 'extraClockClick1', colors: {selectorColor: '#5179A2', hoverCircleColor: 'C5D3E2'}});
+											
+										    $('#ExitDateTime').clockTimePicker({
+												OtherOnClickShow : 'extraClockClick2', colors: {selectorColor: '#5179A2', hoverCircleColor: 'C5D3E2'}});
+											
+									    </script>
+					                      
 					                      <div class="col-md-4 col-sm-4 col-xs-12 form-group">
 					                          <select id="TradeType" name="TradeType" class="form-control">
 					                            <option value="">Trade Type??</option>

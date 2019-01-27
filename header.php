@@ -107,6 +107,8 @@ if (isset($_SESSION['UserGUID']) && $_SESSION['loggedin'] == true) {
     <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
     <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
 
+    <!-- TimePicker plugins -->
+    <script src="../vendors/TimePicker/jquery-clock-timepicker.js" type="text/javascript"></script>
 
     <!-- PNotify -->
     <script src="../vendors/pnotify/dist/pnotify.js"></script>
